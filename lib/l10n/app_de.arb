@@ -1,0 +1,9 @@
+{
+    "main_title": "Der Durchmesser des Werkstücks",
+    "appbar_title": "Rechner für Werkstückdurchmesser",
+    "appbar_table": "Tabelle der Werkstückdurchmesser in mm",
+    "hinttext_square": "Quadrat",
+    "hinttext_hexagon": "Sechseck",
+    "history": "Geschichte:",
+    "clear": "Klar"
+}

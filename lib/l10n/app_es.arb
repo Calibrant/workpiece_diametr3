@@ -1,0 +1,9 @@
+{
+    "main_title": "Calculadora Diámetro de la pieza de trabajo",
+    "appbar_title": "Calculadora de diámetro de pieza de trabajo",
+    "appbar_table": "Tabla de diámetros de piezas de trabajo en mm",
+    "hinttext_square": "cuadrado",
+    "hinttext_hexagon": "hexágono",
+    "history": "Historia:",
+    "clear": "Claro"
+}

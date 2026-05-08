@@ -1,0 +1,12 @@
+{
+    "main_title": "İş Parçası Çapı",
+    "appbar_title": "İş Parçası Çapı Hesaplayıcı",
+    "appbar_table": "İş parçası çapları tablosu (mm)",
+    "hinttext_square": "kare",
+    "hinttext_hexagon": "altıgen",
+    "drawer_header": "İş Parçası Çapı",
+    "drawer_title_rate": "Bu uygulamayı değerlendir",
+    "drawer_title_privacy": "Gizlilik politikası",
+    "history": "Geçmiş:",
+    "clear": "Temizle"
+}

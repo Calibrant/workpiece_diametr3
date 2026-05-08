@@ -1,0 +1,12 @@
+{
+    "main_title": "워크피스 지름",
+    "appbar_title": "워크피스 지름 계산기",
+    "appbar_table": "워크피스 지름 표 (mm)",
+    "hinttext_square": "정사각형",
+    "hinttext_hexagon": "육각형",
+    "drawer_header": "워크피스 지름",
+    "drawer_title_rate": "이 앱 평가하기",
+    "drawer_title_privacy": "개인정보 처리방침",
+    "history": "기록:",
+    "clear": "지우기"
+}

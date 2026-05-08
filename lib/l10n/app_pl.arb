@@ -1,0 +1,12 @@
+{
+    "main_title": "Średnica przedmiotu obrabianego",
+    "appbar_title": "Kalkulator średnicy przedmiotu obrabianego",
+    "appbar_table": "Tabela średnic przedmiotów obrabianych (mm)",
+    "hinttext_square": "kwadrat",
+    "hinttext_hexagon": "sześciokąt",
+    "drawer_header": "Średnica przedmiotu obrabianego",
+    "drawer_title_rate": "Oceń tę aplikację",
+    "drawer_title_privacy": "Polityka prywatności",
+    "history": "Historia:",
+    "clear": "Wyczyść"
+}

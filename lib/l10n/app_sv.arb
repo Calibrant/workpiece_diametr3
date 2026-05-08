@@ -1,0 +1,9 @@
+{
+    "main_title": "Arbetsstyckets diameter",
+    "appbar_title": "Kalkylator för svarv bearbetning diameter",
+    "appbar_table": "Tabell över arbetsstyckets diametrar i mm",
+    "hinttext_square": "fyrkantig",
+    "hinttext_hexagon": "hexagon",
+    "history": "Historia:",
+    "clear": "Klar"
+}

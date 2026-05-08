@@ -1,0 +1,9 @@
+{
+    "main_title": "De diameter van het werkstuk",
+    "appbar_title": "Werkstuk Diameter Calculator",
+    "appbar_table": "Tabel met werkstuk diameter in mm",
+    "hinttext_square": "vierkant",
+    "hinttext_hexagon": "zeshoek",
+    "history": "Geschiedenis:",
+    "clear": "Duidelijk"
+}

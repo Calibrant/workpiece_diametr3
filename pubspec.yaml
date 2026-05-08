@@ -1,0 +1,49 @@
+name: workpiece_diametr
+description: Workpiece diametr
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.10+11 #25.04.26
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  google_mobile_ads: ^7.0.0
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.5.3
+  intl: ^0.20.2
+  in_app_review: ^2.0.11
+  provider: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.5
+  flutter_lints: ^2.0.1
+
+flutter_native_splash:
+  color: "#222831"
+  image: assets/images/splach_screen_1152.png
+
+  android_12:
+    color: "#222831"
+    image: assets/images/splach_screen_1152.png
+
+  android: true
+  ios: false
+  android_gravity: center
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+flutter_intl:
+  enabled: true

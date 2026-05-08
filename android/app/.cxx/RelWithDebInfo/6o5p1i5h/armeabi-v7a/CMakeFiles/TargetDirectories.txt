@@ -1,0 +1,2 @@
+C:/Users/alish/AndroidStudioProjects/workpiece_diametr/android/app/.cxx/RelWithDebInfo/6o5p1i5h/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/alish/AndroidStudioProjects/workpiece_diametr/android/app/.cxx/RelWithDebInfo/6o5p1i5h/armeabi-v7a/CMakeFiles/rebuild_cache.dir

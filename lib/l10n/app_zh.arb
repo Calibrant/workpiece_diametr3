@@ -1,0 +1,12 @@
+{
+    "main_title": "工件直径",
+    "appbar_title": "工件直径计算器",
+    "appbar_table": "工件直径表（毫米）",
+    "hinttext_square": "正方形",
+    "hinttext_hexagon": "六边形",
+    "drawer_header": "工件直径",
+    "drawer_title_rate": "评价此应用",
+    "drawer_title_privacy": "隐私政策",
+    "history": "历史记录：",
+    "clear": "清除"
+}

@@ -1,0 +1,1 @@
+powershellCopySet-PSReadLineOption -HistorySavePath "$env:USERPROFILE\.powershell_history"

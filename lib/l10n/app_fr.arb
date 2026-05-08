@@ -1,0 +1,9 @@
+{
+    "main_title": "Diamètre de la pièce à usiner",
+    "appbar_title": "Calculateur de diamètre de pièce",
+    "appbar_table": "Tableau des diamètres de pièces en mm",
+    "hinttext_square": "carré",
+    "hinttext_hexagon": "hexagone",
+    "history": "Histoire:",
+    "clear": "Clair"
+}

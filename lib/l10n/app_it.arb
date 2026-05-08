@@ -1,0 +1,9 @@
+{
+    "main_title": "Il diametro del pezzo",
+    "appbar_title": "Calcolatore del diametro del pezzo",
+    "appbar_table": "Tabella dei pezzi quadrati ed esagonali in mm",
+    "hinttext_square": "quadrato",
+    "hinttext_hexagon": "esagono",
+    "history": "Storia:",
+    "clear": "Chiaro"
+}

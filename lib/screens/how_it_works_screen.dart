@@ -64,7 +64,7 @@ class HowItWorksScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  const AdMobBanner(),
+                //  const AdMobBanner(),
                 ],
               ),
             ),

@@ -42,125 +42,125 @@ class AppLocalizationsDe extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'So funktioniert es';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Glossar';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'So funktioniert es';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Glossar';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Sprache auswählen';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Tippen zum Ändern der Sprache';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Rechner öffnen →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Vierkant-Bearbeitung — Schritt für Schritt';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Schritt 1: Messen Sie die Seitenlänge (a) Ihres Quadrats in mm\nSchritt 2: Formel anwenden: D = a × 1.414\nSchritt 3: Ergebnis ist der minimale Rohlingsdurchmesser\n\nBeispiel: a = 10 mm → D = 14.14 mm\n\nWarum 1.414?\nDas ist √2 — die Diagonale eines Einheitsquadrats.\nDer Rohling muss die gesamte Quadratdiagonale aufnehmen.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Sechskant-Bearbeitung — Schritt für Schritt';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Schritt 1: Messen Sie den Schlüsselweite (b) in mm\nSchritt 2: Formel anwenden: D = b × 1.155\nSchritt 3: Ergebnis ist der minimale Rohlingsdurchmesser\n\nBeispiel: b = 10 mm → D = 11.55 mm\n\nWarum 1.155?\nDas ist 2/√3 — abgeleitet aus der Sechskantgeometrie.\nDer Rohling muss die volle Sechskantbreite aufnehmen.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Häufige Fehler';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• Verwechseln Sie nicht Durchmesser mit Radius\n• Immer Schlüsselweite messen, nicht Ecke zu Ecke\n• Bearbeitungszugabe (0,5–2 mm) zum Ergebnis addieren\n• Formel gibt Mindestdurchmesser — immer aufrunden';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'Rohling';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'Das Rohteil (meist zylindrisch) vor jeder Bearbeitung.';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'Durchmesser (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'Die Strecke durch den Mittelpunkt eines Kreises. Definiert die Rohlingsgröße.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Vierkant-Bearbeitung';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Bearbeitungsverfahren, das einen runden Rohling in ein quadratisches Profil umformt.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Sechskant-Bearbeitung';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Bearbeitungsverfahren, das einen runden Rohling in ein regelmäßiges sechseckiges Profil umformt.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => 'Zugabe';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Absichtlich belassenes Material für nachfolgende Schlichtschnitte.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Toleranz';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Zulässiger Variationsbereich einer Abmessung. Beispiel: 10 mm ± 0,1 mm bedeutet 9,9–10,1 mm sind akzeptabel.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => 'Drehen';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'Bearbeitung, bei der sich das Werkstück gegen ein feststehendes Werkzeug dreht.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Drehmaschine';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'Werkzeugmaschine, die das Werkstück dreht für Drehen, Planen und Durchmesserreduzierung.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => 'Vorschub';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Geschwindigkeit, mit der das Werkzeug entlang des Werkstücks vorschiebt (mm/Umdrehung).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Schnittiefe';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Materialdicke, die in einem Durchgang abgetragen wird.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => 'Oberflächenbeschaffenheit';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'Textur und Glätte der bearbeiteten Oberfläche, gemessen in Ra (Mittenrauwert) Mikrometer.';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (Quadratwurzel aus 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Mathematische Konstante ≈ 1,414. Wird in der Vierkant-Formel verwendet: D = a × √2.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Mathematische Konstante ≈ 1,155. Wird in der Sechskant-Formel verwendet: D = b × 2/√3.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => 'Bearbeitungszugabe';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Zusätzlicher Durchmesser zum berechneten Minimum, um Werkzeugverschleiß und Oberflächenfehler auszugleichen. Typisch 0,5–2,0 mm.';
 }

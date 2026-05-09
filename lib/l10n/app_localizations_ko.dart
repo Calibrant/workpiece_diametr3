@@ -42,125 +42,125 @@ class AppLocalizationsKo extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => '작동 방식';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => '용어집';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => '작동 방식';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => '용어집';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => '언어 선택';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => '언어 변경을 위해 탭하세요';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => '계산기 열기 →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => '사각 가공 — 단계별';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => '단계 1: 정사각형의 한 변(a)을 mm 단위로 측정\n단계 2: 공식 적용: D = a × 1.414\n단계 3: 결과는 최소 workpiece 직경\n\n예시: a = 10 mm → D = 14.14 mm\n\n왜 1.414인가?\n√2 — 단위 정사각형의 대각선.\nWorkpiece는 정사각형의 대각선을 완전히 포함해야 합니다.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => '육각 가공 — 단계별';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => '단계 1: 평면간 거리(b)를 mm 단위로 측정\n단계 2: 공식 적용: D = b × 1.155\n단계 3: 결과는 최소 workpiece 직경\n\n예시: b = 10 mm → D = 11.55 mm\n\n왜 1.155인가?\n2/√3 — 육각형 기하학에서 유도.\nWorkpiece는 육각형의 전체 폭을 포함해야 합니다.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => '흔한 실수';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• 직경과 반경을 혼동하지 마세요\n• 항상 평면간 측정, 모서리간 아님\n• 결과에 가공여유(0.5–2 mm) 추가\n• 공식은 최소 직경 — 항상 올림';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => '워크피스';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => '가공 전 원재료(보통 원통형).';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => '직경 (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => '중심을 통과하는 원의 거리.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => '사각 가공';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => '원형 workpiece를 사각 단면으로 가공하는 과정.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => '육각 가공';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => '원형 workpiece를 정육각 단면으로 가공하는 과정.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => '여유량';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => '후속 마무리 가공을 위해 의도적으로 남겨둔 여분 재료.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => '공차';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => '치수의 허용 오차 범위. 예: 10mm ± 0.1mm.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => '선삭';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => '워크피스가 회전하며 고정 절삭공구로 가공.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => '선반';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => '워크피스를 회전시켜 선삭, 면삭, 직경 축소하는 기계.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => '이송 속도';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => '절삭공구의 1회전당 진행 속도(mm/rev).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => '절삭 깊이';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => '한 번의 패스에서 제거되는 재료 두께.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => '표면 조도';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => '가공면의 질감과 평활도(Ra 마이크로미터).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (2의 제곱근)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => '수학 상수 ≈ 1.414. 사각 공식에 사용.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => '수학 상수 ≈ 1.155. 육각 공식에 사용.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => '가공 여유량';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => '공구 마모 보상을 위한 추가 직경(보통 0.5–2.0 mm).';
 }

@@ -42,125 +42,125 @@ class AppLocalizationsVi extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'Cách hoạt động';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Bảng chú giải';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'Cách Hoạt Động';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Bảng Chú Giải';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Chọn Ngôn Ngữ';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Nhấn để thay đổi ngôn ngữ';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Mở Máy Tính →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Tạo Hình Vuông — Từng Bước';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Bước 1: Đo cạnh (a) của hình vuông theo mm\nBước 2: Áp dụng công thức: D = a × 1.414\nBước 3: Kết quả là đường kính tối thiểu của phôi\n\nVí dụ: a = 10 mm → D = 14.14 mm\n\nTại sao 1.414?\nĐây là √2 — đường chéo của hình vuông đơn vị.\nPhôi phải chứa toàn bộ đường chéo của hình vuông.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Tạo Hình Lục Giác — Từng Bước';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Bước 1: Đo khoảng cách mặt phẳng đến mặt phẳng (b) theo mm\nBước 2: Áp dụng công thức: D = b × 1.155\nBước 3: Kết quả là đường kính tối thiểu của phôi\n\nVí dụ: b = 10 mm → D = 11.55 mm\n\nTại sao 1.155?\nĐây là 2/√3 — xuất phát từ hình học lục giác.\nPhôi phải chứa toàn bộ chiều rộng lục giác.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Lỗi Thường Gặp';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• Đừng nhầm lẫn đường kính với bán kính\n• Luôn đo mặt phẳng đến mặt phẳng, không phải góc đến góc\n• Thêm lượng dư gia công (0.5–2 mm) vào kết quả\n• Công thức cho đường kính tối thiểu — luôn làm tròn lên';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'Phôi';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'Vật liệu thô (thường hình trụ) trước khi gia công.';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'Đường kính (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'Khoảng cách qua tâm của hình tròn.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Tạo Hình Vuông';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Quy trình cắt phôi tròn thành tiết diện vuông.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Tạo Hình Lục Giác';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Quy trình cắt phôi tròn thành tiết diện lục giác đều.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => 'Lượng dư';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Vật liệu thừa cố ý để lại cho các lần cắt hoàn thiện.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Độ dung sai';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Khoảng biến thiên cho phép. Ví dụ: 10mm ± 0.1mm.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => 'Tiện';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'Quy trình phôi quay đối với dụng cụ cắt cố định trên máy tiện.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Máy tiện';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'Máy quay phôi để tiện, chuốt mặt và giảm đường kính.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => 'Tốc độ tiến dao';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Tốc độ dụng cụ di chuyển dọc phôi (mm/vòng quay).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Chiều sâu cắt';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Độ dày vật liệu được loại bỏ trong một lần chạy.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => 'Độ nhám bề mặt';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'Kết cấu và độ mịn của bề mặt đã gia công (Ra micromet).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (Căn bậc hai của 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Hằng số toán học ≈ 1.414 dùng trong công thức vuông.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Hằng số toán học ≈ 1.155 dùng trong công thức lục giác.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => 'Lượng dư gia công';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Đường kính bổ sung để bù hao mòn dụng cụ (0.5–2.0 mm).';
 }

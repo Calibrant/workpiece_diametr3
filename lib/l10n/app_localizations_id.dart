@@ -42,125 +42,125 @@ class AppLocalizationsId extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'Cara kerjanya';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Glosarium';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'Cara Kerja';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Glosarium';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Pilih Bahasa';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Ketuk untuk mengganti bahasa';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Buka Kalkulator →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Pembentukan Segi Empat — Langkah demi Langkah';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Langkah 1: Ukur sisi (a) segi empat Anda dalam mm\nLangkah 2: Terapkan rumus: D = a × 1.414\nLangkah 3: Hasil adalah diameter minimum benda kerja\n\nContoh: a = 10 mm → D = 14.14 mm\n\nMengapa 1.414?\nIni adalah √2 — diagonal persegi satuan.\nBenda kerja harus sepenuhnya menampung diagonal segi empat.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Pembentukan Segi Enam — Langkah demi Langkah';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Langkah 1: Ukur jarak bidang ke bidang (b) dalam mm\nLangkah 2: Terapkan rumus: D = b × 1.155\nLangkah 3: Hasil adalah diameter minimum benda kerja\n\nContoh: b = 10 mm → D = 11.55 mm\n\nMengapa 1.155?\nIni adalah 2/√3 — berasal dari geometri heksagon.\nBenda kerja harus menampung lebar penuh heksagon.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Kesalahan Umum';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• Jangan keliru antara diameter dan radius\n• Selalu ukur flat-to-flat, bukan corner-to-corner\n• Tambahkan allowance pemesinan (0.5–2 mm) ke hasil\n• Rumus memberikan diameter minimum — selalu bulatkan ke atas';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'Benda Kerja';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'Bahan mentah (biasanya silinder) sebelum operasi pemesinan.';
 
   @override
   String get term_02_title => 'Diameter (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'Jarak melintasi lingkaran melalui pusatnya.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Pembentukan Segi Empat';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Proses pemesinan yang memotong benda bulat menjadi profil segi empat.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Pembentukan Segi Enam';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Proses pemesinan yang memotong benda bulat menjadi profil heksagon reguler.';
 
   @override
   String get term_05_title => 'Allowance';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Material ekstra yang sengaja dibiarkan untuk pemotongan akhir.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Toleransi';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Rentang variasi yang diizinkan. Contoh: 10mm ± 0.1mm.';
 
   @override
   String get term_07_title => 'Turning';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'Operasi di mana benda kerja berputar terhadap alat potong tetap di bubut.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Bubut';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'Mesin yang memutar benda kerja untuk turning dan pengurangan diameter.';
 
   @override
   String get term_09_title => 'Feed Rate';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Kecepatan gerak alat potong (mm per putaran).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Kedalaman Potong';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Ketebalan material yang dihilangkan dalam satu pass.';
 
   @override
   String get term_11_title => 'Surface Finish';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'Tekstur dan kehalusan permukaan yang dimesin (Ra mikrometer).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (Akar kuadrat 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Konstanta matematika ≈ 1.414 untuk rumus segi empat.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Konstanta matematika ≈ 1.155 untuk rumus segi enam.';
 
   @override
   String get term_14_title => 'Machining Allowance';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Diameter tambahan untuk mengkompensasi keausan alat (0.5–2.0 mm).';
 }

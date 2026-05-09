@@ -42,125 +42,125 @@ class AppLocalizationsTr extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'Nasıl Çalışır';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Terimler Sözlüğü';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'Nasıl Çalışır';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Terimler Sözlüğü';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Dil Seç';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Dili değiştirmek için dokunun';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Hesap Makinesini Aç →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Kare Şekillendirme — Adım Adım';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Adım 1: Karenizin kenar uzunluğunu (a) mm cinsinden ölçün\nAdım 2: Formülü uygulayın: D = a × 1.414\nAdım 3: Sonuç minimum iş parçası çapıdır\n\nÖrnek: a = 10 mm → D = 14.14 mm\n\nNeden 1.414?\nBu √2 — birim karenin köşegeni.\nİş parçası karenin köşegenini tamamen içermelidir.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Altıgen Şekillendirme — Adım Adım';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Adım 1: Düz yüzeyler arası mesafeyi (b) mm cinsinden ölçün\nAdım 2: Formülü uygulayın: D = b × 1.155\nAdım 3: Sonuç minimum iş parçası çapıdır\n\nÖrnek: b = 10 mm → D = 11.55 mm\n\nNeden 1.155?\nBu 2/√3 — altıgen geometrisinden türetilmiştir.\nİş parçası altıgenin tam genişliğini içermelidir.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Yaygın Hatalar';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• Çapı yarıçapla karıştırmayın\n• Her zaman düz yüzeyler arası ölçün, köşe-köşe değil\n• Sonuca işleme payı (0,5–2 mm) ekleyin\n• Formül minimum çapı verir — her zaman yukarı yuvarlayın';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'İş parçası';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'Herhangi bir işlemden önce ham malzeme (genellikle silindirik).';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'Çap (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'Merkezinden geçen daire mesafesi.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Kare Şekillendirme';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Yuvarlak iş parçasını kare enine kesite dönüştüren işlem.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Altıgen Şekillendirme';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Yuvarlak iş parçasını düzenli altıgen enine kesite dönüştüren işlem.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => 'Pay';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Son işlem kesimleri için kasıtlı olarak bırakılan ekstra malzeme.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Tolerans';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Boyut varyasyonunun izin verilen aralığı. Örnek: 10mm ± 0.1mm.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => 'Tornalama';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'İş parçasının torna tezgahında sabit kesici takıma karşı döndüğü işlem.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Torna Tezgahı';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'İş parçasını döndürerek tornalama ve çap azaltma yapan makine.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => 'İlerleme Hızı';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Kesici takımı ilerletme hızı (mm/dev).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Kesme Derinliği';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Tek geçişte kaldırılan malzeme kalınlığı.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => 'Yüzey Kalitesi';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'İşlenmiş yüzeyin dokusu ve pürüzsüzlüğü (Ra mikrometre).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (2\'nin karekökü)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Matematiksel sabit ≈ 1.414, kare formülünde kullanılır.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Matematiksel sabit ≈ 1.155, altıgen formülünde kullanılır.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => 'İşleme Payı';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Takım aşınmasını telafi etmek için eklenen çap (0,5–2,0 mm).';
 }

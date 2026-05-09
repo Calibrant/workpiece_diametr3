@@ -42,125 +42,125 @@ class AppLocalizationsZh extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => '工作原理';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => '术语表';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => '工作原理';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => '术语表';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => '选择语言';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => '点击更改语言';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => '打开计算器 →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => '方形加工 — 步骤详解';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => '步骤 1：测量正方形边长 (a)（单位：mm）\n步骤 2：应用公式：D = a × 1.414\n步骤 3：结果为最小工件直径\n\n示例：a = 10 mm → D = 14.14 mm\n\n为什么是 1.414？\n这是 √2 — 单位正方形的对角线。\n工件必须完全包含正方形的对角线长度。';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => '六边形加工 — 步骤详解';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => '步骤 1：测量对边距离 (b)（单位：mm）\n步骤 2：应用公式：D = b × 1.155\n步骤 3：结果为最小工件直径\n\n示例：b = 10 mm → D = 11.55 mm\n\n为什么是 1.155？\n这是 2/√3 — 源自六边形几何学。\n工件必须包含六边形的完整宽度。';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => '常见错误';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• 不要混淆直径与半径\n• 始终测量对边距离，而非角到角\n• 在结果中加上加工余量（0.5–2 mm）\n• 公式给出最小直径 — 务必向上取整';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => '工件';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => '加工前的原材料（通常为圆柱形）。';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => '直径 (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => '通过圆心的距离，用于定义工件尺寸。';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => '方形加工';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => '将圆形工件加工成正方形截面的工艺。';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => '六边形加工';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => '将圆形工件加工成正六边形截面的工艺。';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => '余量';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => '为后续精加工有意留出的额外材料。';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => '公差';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => '尺寸允许的变动范围。例如：10mm ± 0.1mm 表示 9.9–10.1mm 均可接受。';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => '车削';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => '工件旋转、刀具固定的车床加工操作。';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => '车床';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => '使工件旋转以进行车削、端面加工和直径缩小的机床。';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => '进给率';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => '刀具沿工件前进的速度（mm/转）。';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => '切削深度';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => '单次走刀去除的材料厚度。';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => '表面粗糙度';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => '加工表面的纹理与平滑度，以 Ra（粗糙度平均值）微米为单位。';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2（2的平方根）';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => '数学常数 ≈ 1.414，用于方形加工公式。';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => '数学常数 ≈ 1.155，用于六边形加工公式。';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => '加工余量';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => '为补偿刀具磨损和表面缺陷而增加的直径。通常 0.5–2.0 mm。';
 }

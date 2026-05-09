@@ -42,125 +42,125 @@ class AppLocalizationsEs extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'Cómo funciona';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Glosario';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'Cómo funciona';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Glosario';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Seleccionar idioma';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Toca para cambiar el idioma';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Abrir calculadora →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Conformado de Cuadrado — Paso a paso';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Paso 1: Mida el lado (a) de su cuadrado en mm\nPaso 2: Aplique la fórmula: D = a × 1.414\nPaso 3: El resultado es el diámetro mínimo de la pieza en bruto\n\nEjemplo: a = 10 mm → D = 14.14 mm\n\n¿Por qué 1.414?\nEs √2 — la diagonal de un cuadrado unitario.\nLa pieza debe contener completamente la diagonal del cuadrado.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Conformado de Hexágono — Paso a paso';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Paso 1: Mida la distancia cara a cara (b) en mm\nPaso 2: Aplique la fórmula: D = b × 1.155\nPaso 3: El resultado es el diámetro mínimo de la pieza en bruto\n\nEjemplo: b = 10 mm → D = 11.55 mm\n\n¿Por qué 1.155?\nEs 2/√3 — derivado de la geometría hexagonal.\nLa pieza debe contener el ancho completo del hexágono.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Errores comunes';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• No confunda diámetro con radio\n• Mida siempre cara a cara, no esquina a esquina\n• Agregue margen de mecanizado (0.5–2 mm) al resultado\n• La fórmula da el diámetro mínimo — redondee siempre hacia arriba';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'Pieza en bruto';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'La pieza de material crudo (generalmente cilíndrica) antes de cualquier operación de mecanizado.';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'Diámetro (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'La distancia a través de un círculo medida por su centro. Se usa para definir el tamaño de la pieza.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Conformado de cuadrado';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Proceso de mecanizado que corta una pieza redonda en un perfil de sección cuadrada.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Conformado de hexágono';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Proceso de mecanizado que corta una pieza redonda en un perfil de sección hexagonal regular.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => 'Margen';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Material extra dejado intencionalmente para cortes de acabado posteriores.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Tolerancia';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Rango permitido de variación en una dimensión. Ejemplo: 10mm ± 0.1mm significa que 9.9–10.1mm es aceptable.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => 'Torneado';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'Operación donde la pieza gira contra una herramienta de corte fija en un torno.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Torno';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'Máquina herramienta que hace girar la pieza para torneado, enfrentado y reducción de diámetro.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => 'Avance';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Velocidad a la que avanza la herramienta a lo largo de la pieza, medida en mm por revolución.';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Profundidad de corte';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Espesor de material removido en un solo pase de la herramienta.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => 'Acabado superficial';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'Textura y suavidad de la superficie mecanizada, medida en Ra (rugosidad media) micrómetros.';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (Raíz cuadrada de 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Constante matemática ≈ 1.414. Usada en la fórmula de cuadrado: D = a × √2.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Constante matemática ≈ 1.155. Usada en la fórmula de hexágono: D = b × 2/√3.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => 'Margen de mecanizado';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Diámetro adicional añadido al mínimo calculado para compensar desgaste de herramienta e imperfecciones. Típicamente 0.5–2.0 mm.';
 }

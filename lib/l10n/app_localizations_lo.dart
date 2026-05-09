@@ -42,125 +42,125 @@ class AppLocalizationsLo extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'ວິທີການເຮັດວຽກ';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'ຄຳສັບຕ່າງໆ';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'ວິທີການເຮັດວຽກ';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'ຄຳສັບຕ່າງໆ';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'ເລືອກພາສາ';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'ກົດເພື່ອປ່ຽນພາສາ';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'ເປີດໂຕຄິດໄລ່ →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'ການສ້າງຮູບສີ່ຫຼ່ຽມ — ຂັ້ນຕອນເທື່ອລະຂັ້ນ';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'ຂັ້ນຕອນ 1: ວັດຄວາມຍາວຂອງຂ້າງ (a) ຂອງສີ່ຫຼ່ຽມຂອງທ່ານໃນ mm\nຂັ້ນຕອນ 2: ນຳໃຊ້ສູດ: D = a × 1.414\nຂັ້ນຕອນ 3: ຜົນໄດ້ຮັບຄືເສັ້ນຜ່າສູນກາງຕ່ຳສຸດຂອງ workpiece\n\nຕົວຢ່າງ: a = 10 mm → D = 14.14 mm\n\nເປັນຫຍັງ 1.414?\nນີ້ຄື √2 — ເສັ້ນຂວາງຂອງສີ່ຫຼ່ຽມຫົວໜ່ວຍ.\nWorkpiece ຕ້ອງບັງຄັບເສັ້ນຂວາງທັງໝົດຂອງສີ່ຫຼ່ຽມ.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'ການສ້າງຮູບຫົກຫຼ່ຽມ — ຂັ້ນຕອນເທື່ອລະຂັ້ນ';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'ຂັ້ນຕອນ 1: ວັດຄວາມຫ່າງລະຫວ່າງໜ້າຮາບພຽງ (b) ໃນ mm\nຂັ້ນຕອນ 2: ນຳໃຊ້ສູດ: D = b × 1.155\nຂັ້ນຕອນ 3: ຜົນໄດ້ຮັບຄືເສັ້ນຜ່າສູນກາງຕ່ຳສຸດ\n\nຕົວຢ່າງ: b = 10 mm → D = 11.55 mm\n\nເປັນຫຍັງ 1.155?\nນີ້ຄື 2/√3 — ມາຈາກເລຂາຄະນິດຫົກຫຼ່ຽມ.\nWorkpiece ຕ້ອງບັງຄັບຄວາມກວ້າງເຕັມຂອງຫົກຫຼ່ຽມ.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'ຄວາມຜິດພາດທົ່ວໄປ';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• ຢ່າສັບສົນເສັ້ນຜ່າສູນກາງກັບລັງສີ\n• ວັດ flat-to-flat ເສມອ, ບໍ່ແມ່ນແຈຕໍ່ແຈ\n• ເພີ່ມ machining allowance (0.5–2 mm)\n• ສູດໃຫ້ເສັ້ນຜ່າຕ່ຳສຸດ — ຕ້ອງປັດຂຶ້ນເສມອ';
 
   @override
   String get term_01_title => 'Workpiece';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'ວັດຖຸດິບ (ປົກກະຕິເປັນຮູບກະບອງ) ກ່ອນຂັ້ນຕອນເຄື່ອງຈັກ.';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'ເສັ້ນຜ່າສູນກາງ (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'ຄວາມຫ່າງຂ້າມວົງມົນກາງຈຸດສູນກາງ.';
 
   @override
   String get term_03_title => 'Square Shaping';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'ການຕັດ workpiece ມົນເປັນຮູບຕັດສີ່ຫຼ່ຽມ.';
 
   @override
   String get term_04_title => 'Hexagon Shaping';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'ການຕັດ workpiece ມົນເປັນຮູບຕັດຫົກຫຼ່ຽມປົກກະຕິ.';
 
   @override
   String get term_05_title => 'Allowance';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'ວັດຖຸເພີ່ມເຕີມທີ່ປະຕິບັດຕາມເພື່ອການຕັດສຳເລັດຮູບ.';
 
   @override
   String get term_06_title => 'Tolerance';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'ຊ່ວງການປ່ຽນແປງທີ່ອະນຸຍາດ. ຕົວຢ່າງ: 10mm ± 0.1mm.';
 
   @override
   String get term_07_title => 'Turning';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'ການຫມຸນ workpiece ກັບເຄື່ອງຕັດຄົງທີ່ໃນເຄື່ອງຫມຸນ.';
 
   @override
   String get term_08_title => 'Lathe';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'ເຄື່ອງມືທີ່ຫມຸນ workpiece ເພື່ອ turning ແລະຫຼຸດເສັ້ນຜ່າ.';
 
   @override
   String get term_09_title => 'Feed Rate';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'ຄວາມໄວຂອງເຄື່ອງຕັດ (mm ຕໍ່ການຫມຸນ).';
 
   @override
   String get term_10_title => 'Cutting Depth';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'ຄວາມຫນາກັບຖືກເອົາອອກໃນ pass ດຽວ.';
 
   @override
   String get term_11_title => 'Surface Finish';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'ໂຄງສ້າງແລະຄວາມລຽບຂອງຫນ້າສຳເລັດ (Ra ໄມໂຄມິເຕີ).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (ຮາກສີ່ຂອງ 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'ຄວາມຄົງທີ່ຄະນິດສາດ ≈ 1.414.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'ຄວາມຄົງທີ່ຄະນິດສາດ ≈ 1.155.';
 
   @override
   String get term_14_title => 'Machining Allowance';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'ເສັ້ນຜ່າເພີ່ມເຕີມເພື່ອຊົດເຊີຍການສວມໃຊ້ (0.5–2.0 mm).';
 }

@@ -42,125 +42,125 @@ class AppLocalizationsRu extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
-  String get menu_how_it_works => 'How it works';
+  String get menu_how_it_works => 'Как это работает';
 
   @override
-  String get menu_glossary => 'Glossary';
+  String get menu_glossary => 'Глоссарий';
 
   @override
-  String get title_how_it_works => 'How It Works';
+  String get title_how_it_works => 'Как это работает';
 
   @override
-  String get title_glossary => 'Glossary';
+  String get title_glossary => 'Глоссарий';
 
   @override
-  String get select_language => 'Select Language';
+  String get select_language => 'Выбрать язык';
 
   @override
-  String get hint_change_language => 'Tap to change language';
+  String get hint_change_language => 'Нажмите, чтобы сменить язык';
 
   @override
-  String get btn_open_calculator => 'Open Calculator →';
+  String get btn_open_calculator => 'Открыть калькулятор →';
 
   @override
-  String get section_square_title => 'Square Shaping — Step by Step';
+  String get section_square_title => 'Формирование квадрата — Пошагово';
 
   @override
-  String get section_square_body => 'Step 1: Measure the side (a) of your square in mm\nStep 2: Apply formula: D = a × 1.414\nStep 3: Result is the minimum workpiece diameter\n\nExample: a = 10 mm → D = 14.14 mm\n\nWhy 1.414?\nThis is √2 — the diagonal of a unit square.\nThe workpiece must fully contain the square diagonal.';
+  String get section_square_body => 'Шаг 1: Измерьте сторону (a) вашего квадрата в мм\nШаг 2: Примените формулу: D = a × 1.414\nШаг 3: Результат — минимальный диаметр заготовки\n\nПример: a = 10 мм → D = 14.14 мм\n\nПочему 1.414?\nЭто √2 — диагональ единичного квадрата.\nЗаготовка должна полностью содержать диагональ квадрата.';
 
   @override
-  String get section_hex_title => 'Hexagon Shaping — Step by Step';
+  String get section_hex_title => 'Формирование шестигранника — Пошагово';
 
   @override
-  String get section_hex_body => 'Step 1: Measure flat-to-flat distance (b) in mm\nStep 2: Apply formula: D = b × 1.155\nStep 3: Result is the minimum workpiece diameter\n\nExample: b = 10 mm → D = 11.55 mm\n\nWhy 1.155?\nThis is 2/√3 — derived from hexagon geometry.\nThe workpiece must contain the full hexagon width.';
+  String get section_hex_body => 'Шаг 1: Измерьте расстояние «от грани до грани» (b) в мм\nШаг 2: Примените формулу: D = b × 1.155\nШаг 3: Результат — минимальный диаметр заготовки\n\nПример: b = 10 мм → D = 11.55 мм\n\nПочему 1.155?\nЭто 2/√3 — получено из геометрии шестиугольника.\nЗаготовка должна содержать полную ширину шестигранника.';
 
   @override
-  String get section_mistakes_title => 'Common Mistakes';
+  String get section_mistakes_title => 'Частые ошибки';
 
   @override
-  String get section_mistakes_body => '• Do not confuse diameter with radius\n• Always measure flat-to-flat, not corner-to-corner\n• Add machining allowance (0.5–2 mm) to result\n• Formula gives minimum diameter — always round up';
+  String get section_mistakes_body => '• Не путайте диаметр с радиусом\n• Всегда измеряйте «от грани до грани», а не от угла до угла\n• Добавляйте припуск на обработку (0,5–2 мм)\n• Формула даёт минимальный диаметр — всегда округляйте в большую сторону';
 
   @override
-  String get term_01_title => 'Workpiece';
+  String get term_01_title => 'Заготовка';
 
   @override
-  String get term_01_body => 'The raw material piece (usually cylindrical) before any machining operation is performed.';
+  String get term_01_body => 'Исходный материал (обычно цилиндрический) до любой механической обработки.';
 
   @override
-  String get term_02_title => 'Diameter (D)';
+  String get term_02_title => 'Диаметр (D)';
 
   @override
-  String get term_02_body => 'The distance across a circle measured through its center. Used to define workpiece size.';
+  String get term_02_body => 'Расстояние через центр окружности.';
 
   @override
-  String get term_03_title => 'Square Shaping';
+  String get term_03_title => 'Формирование квадрата';
 
   @override
-  String get term_03_body => 'A machining process that cuts a round workpiece into a square cross-section profile.';
+  String get term_03_body => 'Процесс обработки, превращающий круглую заготовку в квадратный профиль.';
 
   @override
-  String get term_04_title => 'Hexagon Shaping';
+  String get term_04_title => 'Формирование шестигранника';
 
   @override
-  String get term_04_body => 'A machining process that cuts a round workpiece into a regular hexagonal cross-section profile.';
+  String get term_04_body => 'Процесс обработки, превращающий круглую заготовку в правильный шестигранный профиль.';
 
   @override
-  String get term_05_title => 'Allowance';
+  String get term_05_title => 'Припуск';
 
   @override
-  String get term_05_body => 'Extra material intentionally left on the workpiece surface for subsequent finishing cuts.';
+  String get term_05_body => 'Дополнительный материал, оставленный специально для чистовых проходов.';
 
   @override
-  String get term_06_title => 'Tolerance';
+  String get term_06_title => 'Допуск';
 
   @override
-  String get term_06_body => 'The permissible range of variation in a dimension. Example: 10mm ± 0.1mm means 9.9–10.1mm is acceptable.';
+  String get term_06_body => 'Допустимый диапазон отклонения размера. Пример: 10мм ± 0.1мм.';
 
   @override
-  String get term_07_title => 'Turning';
+  String get term_07_title => 'Токарная обработка';
 
   @override
-  String get term_07_body => 'A machining operation where the workpiece rotates against a stationary cutting tool on a lathe.';
+  String get term_07_body => 'Операция, при которой заготовка вращается относительно неподвижного резца.';
 
   @override
-  String get term_08_title => 'Lathe';
+  String get term_08_title => 'Токарный станок';
 
   @override
-  String get term_08_body => 'A machine tool that rotates the workpiece to perform turning, facing, and diameter reduction operations.';
+  String get term_08_body => 'Станок, вращающий заготовку для токарной обработки и уменьшения диаметра.';
 
   @override
-  String get term_09_title => 'Feed Rate';
+  String get term_09_title => 'Подача';
 
   @override
-  String get term_09_body => 'The speed at which the cutting tool advances along the workpiece, measured in mm per revolution.';
+  String get term_09_body => 'Скорость продвижения резца вдоль заготовки (мм/оборот).';
 
   @override
-  String get term_10_title => 'Cutting Depth';
+  String get term_10_title => 'Глубина резания';
 
   @override
-  String get term_10_body => 'The thickness of material removed in a single pass of the cutting tool.';
+  String get term_10_body => 'Толщина материала, снимаемого за один проход.';
 
   @override
-  String get term_11_title => 'Surface Finish';
+  String get term_11_title => 'Шероховатость поверхности';
 
   @override
-  String get term_11_body => 'The texture and smoothness of a machined surface, measured in Ra (roughness average) micrometers.';
+  String get term_11_body => 'Текстура и гладкость обработанной поверхности (Ra в микрометрах).';
 
   @override
-  String get term_12_title => '√2 (Square root of 2)';
+  String get term_12_title => '√2 (Квадратный корень из 2)';
 
   @override
-  String get term_12_body => 'Mathematical constant ≈ 1.414. Used in square shaping formula: D = a × √2.';
+  String get term_12_body => 'Математическая константа ≈ 1.414 для формулы квадрата.';
 
   @override
   String get term_13_title => '2/√3';
 
   @override
-  String get term_13_body => 'Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.';
+  String get term_13_body => 'Математическая константа ≈ 1.155 для формулы шестигранника.';
 
   @override
-  String get term_14_title => 'Machining Allowance';
+  String get term_14_title => 'Припуск на обработку';
 
   @override
-  String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+  String get term_14_body => 'Дополнительный диаметр для компенсации износа инструмента (0,5–2,0 мм).';
 }

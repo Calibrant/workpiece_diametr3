@@ -397,7 +397,8 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
                         padding: const EdgeInsets.only(
                             left: 20.0, right: 20.0, bottom: 10.0),
                         sliver: historyHexagonSliverList(),
-                      )
+                      ),
+                      
                     ],
                   ),
                 ]),

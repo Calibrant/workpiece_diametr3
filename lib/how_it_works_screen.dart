@@ -23,8 +23,10 @@ class HowItWorksScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                _buildDiagramColumn('assets/images/square_diag.png', 'D₁ = a × 1.414'),
-                _buildDiagramColumn('assets/images/hex_diag.png', 'D₂ = b × 1.155'),
+                _buildDiagramColumn(
+                    'assets/images/square_diag.png', 'D₁ = a × 1.414'),
+                _buildDiagramColumn(
+                    'assets/images/hex_diag.png', 'D₂ = b × 1.155'),
               ],
             ),
             const SizedBox(height: 24),
@@ -66,7 +68,8 @@ class HowItWorksScreen extends StatelessWidget {
     return Column(
       children: [
         Image.asset(asset,
-            height: 100,
+            height: 198,
+            width: 150,
             errorBuilder: (_, __, ___) =>
                 const Icon(Icons.image, size: 100, color: Colors.white24)),
         const SizedBox(height: 8),

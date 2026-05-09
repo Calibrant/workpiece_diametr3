@@ -2,7 +2,7 @@ name: workpiece_diametr
 description: Workpiece diametr
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.10+11 #25.04.26
+version: 1.2.0+12 #09.05.26
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -40,7 +40,6 @@ flutter_native_splash:
   android_gravity: center
 
 flutter:
-
   uses-material-design: true
   generate: true
   assets:

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workpiece_diametr/ad_helper.dart';
 import 'package:workpiece_diametr/glossary_item.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
@@ -57,7 +58,7 @@ class GlossaryScreen extends StatelessWidget {
             ),
           ),
           // Баннер прижат к низу, вне скролла
-          const AdMobBannerSecondary(),
+          AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
         ],
       ),
     );

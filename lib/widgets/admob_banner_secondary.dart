@@ -1,9 +1,14 @@
+// lib/widgets/admob_banner_secondary.dart
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'dart:io';
 
 class AdMobBannerSecondary extends StatefulWidget {
-  const AdMobBannerSecondary({super.key});
+  final String adUnitId; // ← ID передаётся снаружи
+
+  const AdMobBannerSecondary({
+    super.key,
+    required this.adUnitId,
+  });
 
   @override
   State<AdMobBannerSecondary> createState() => _AdMobBannerSecondaryState();
@@ -12,16 +17,6 @@ class AdMobBannerSecondary extends StatefulWidget {
 class _AdMobBannerSecondaryState extends State<AdMobBannerSecondary> {
   BannerAd? _bannerAd;
   bool _isLoaded = false;
-
-  String get _adUnitId {
-    if (Platform.isAndroid) {
-      return 'ca-app-pub-3940256099942544/9214589741'; // ← ваш новый ID
-    } else if (Platform.isIOS) {
-      return 'ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX'; // ← ваш iOS ID
-    } else {
-      return 'ca-app-pub-3940256099942544/9214589741'; // тестовый
-    }
-  }
 
   @override
   void didChangeDependencies() {
@@ -38,21 +33,21 @@ class _AdMobBannerSecondaryState extends State<AdMobBannerSecondary> {
         await AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(width);
 
     if (adSize == null) {
-      debugPrint('❌ AdMob Secondary: Failed to get adaptive banner size');
+      debugPrint('❌ AdMob Secondary: не удалось получить размер баннера');
       return;
     }
 
     _bannerAd = BannerAd(
-      adUnitId: _adUnitId,
+      adUnitId: widget.adUnitId, // ← берём ID из параметра
       request: const AdRequest(),
       size: adSize,
       listener: BannerAdListener(
         onAdLoaded: (Ad ad) {
-          debugPrint('✅ AdMob Secondary: Banner loaded');
+          debugPrint('✅ AdMob Secondary: баннер загружен');
           if (mounted) setState(() => _isLoaded = true);
         },
         onAdFailedToLoad: (Ad ad, LoadAdError error) {
-          debugPrint('❌ AdMob Secondary: Failed: $error');
+          debugPrint('❌ AdMob Secondary: ошибка — $error');
           ad.dispose();
           _bannerAd = null;
           if (mounted) setState(() => _isLoaded = false);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/updated_data_table.dart';
+import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
 import 'ad_helper.dart';
 import 'const.dart';
 
@@ -16,35 +16,13 @@ class TableBlanksSquareAndHexagon extends StatefulWidget {
 class _TableBlanksSquareAndHexagonState
     extends State<TableBlanksSquareAndHexagon> {
   late Image imageTwo;
-  late BannerAd _bottomBannerAd;
-  bool _isBottomBannerAdLoaded = false;
 
   ScrollController scrollController = ScrollController();
   bool showbtn = false;
 
-  void _createBottomBannerAd() {
-    _bottomBannerAd = BannerAd(
-      adUnitId: AdHelper.bannerAdUnitId,
-      size: AdSize.banner,
-      request: const AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (_) {
-          setState(() {
-            _isBottomBannerAdLoaded = true;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          ad.dispose();
-        },
-      ),
-    );
-    _bottomBannerAd.load();
-  }
-
   @override
   void initState() {
     imageTwo = Image.asset(imgPage2);
-    _createBottomBannerAd();
 
     scrollController.addListener(() {
       double showoffset = 10.0;
@@ -67,12 +45,6 @@ class _TableBlanksSquareAndHexagonState
   }
 
   @override
-  void dispose() {
-    _bottomBannerAd.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: Theme.of(context).copyWith(
@@ -84,13 +56,6 @@ class _TableBlanksSquareAndHexagonState
         child: ScrollConfiguration(
           behavior: const ScrollBehavior(),
           child: Scaffold(
-            bottomNavigationBar: _isBottomBannerAdLoaded
-                ? SizedBox(
-                    height: _bottomBannerAd.size.height.toDouble(),
-                    width: _bottomBannerAd.size.width.toDouble(),
-                    child: AdWidget(ad: _bottomBannerAd),
-                  )
-                : null,
             backgroundColor: const Color(0xffEEEEEE),
             appBar: (AppBar(
               toolbarHeight: kAppbarHeight,
@@ -110,26 +75,33 @@ class _TableBlanksSquareAndHexagonState
                   onPressed: () => Navigator.pop(context),
                   icon: const Icon(Icons.arrow_back)),
             )),
-            body: Container(
-              height: 900,
-              decoration: const BoxDecoration(),
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 5),
-                child: SingleChildScrollView(
-                  controller: scrollController,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Center(child: imageTwo),
-                      const SizedBox(
-                        height: 10.0,
+            body: Column(
+              children: [
+                Expanded(
+                  child: Container(
+                    height: 900,
+                    decoration: const BoxDecoration(),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 20, 20, 5),
+                      child: SingleChildScrollView(
+                        controller: scrollController,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Center(child: imageTwo),
+                            const SizedBox(
+                              height: 10.0,
+                            ),
+                            const UpdatedDataTable(),
+                          ],
+                        ),
                       ),
-                      const UpdatedDataTable(),
-                    ],
+                    ),
                   ),
                 ),
-              ),
+                AdMobBannerSecondary(adUnitId: AdHelper.mainAndTablePage),
+              ],
             ),
             floatingActionButton: AnimatedOpacity(
               duration:

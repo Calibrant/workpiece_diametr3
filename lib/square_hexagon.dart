@@ -9,9 +9,9 @@ import 'package:workpiece_diametr/tf_widget.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
 import 'const.dart';
 import 'ad_helper.dart';
-
 
 class SquareAndHexagon extends StatefulWidget {
   const SquareAndHexagon({super.key, required this.title});
@@ -23,8 +23,6 @@ class SquareAndHexagon extends StatefulWidget {
 
 class _SquareAndHexagonState extends State<SquareAndHexagon> {
   final _controllers = <TextEditingController>[];
-  late BannerAd _bottomBannerAd;
-  bool _isBottomBannerAdLoaded = false;
   InterstitialAd? _interstitialAd;
   int _clearPressCount = 0; // Счетчик для показа рекламы и отзыва
   final InAppReview _inAppReview = InAppReview.instance;
@@ -32,6 +30,9 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
   static const String _reviewCalcCountKey = 'total_calculations_for_review';
   late Image imageWorkpieceDiametr;
   late SharedPreferences _spref1, _spref2;
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  bool _isDrawerOpen = false;
 
   getSharedPref() async {
     _spref1 = await SharedPreferences.getInstance();
@@ -83,25 +84,6 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
     historyHexagon.clear();
   }
 
-  void _createBottomBannerAd() {
-    _bottomBannerAd = BannerAd(
-      adUnitId: AdHelper.bannerAdUnitId,
-      size: AdSize.banner,
-      request: const AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (_) {
-          setState(() {
-            _isBottomBannerAdLoaded = true;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          ad.dispose();
-        },
-      ),
-    );
-    _bottomBannerAd.load();
-  }
-
   void onListenerOne() {
     _controllers[0].addListener(() {
       setState(() {
@@ -139,10 +121,10 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
             },
           );
           _interstitialAd = ad;
-          print('Interstitial Ad Loaded');
+          // print('Interstitial Ad Loaded');
         },
         onAdFailedToLoad: (LoadAdError error) {
-          print('Interstitial Ad failed to load: $error');
+          //  print('Interstitial Ad failed to load: $error');
           _interstitialAd = null;
         },
       ),
@@ -160,10 +142,12 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
 
     if (totalCalculations >= 10) {
       if (await _inAppReview.isAvailable()) {
-        _inAppReview.requestReview().catchError((e) => print("Review request failed: $e"));
+        _inAppReview.requestReview().catchError(
+              (e) => print("Review request failed: $e"),
+            );
         await prefs.setBool(_reviewFlagKey, true);
       } else {
-        print('In-App Review not available');
+        // print('In-App Review not available');
       }
     }
   }
@@ -175,7 +159,7 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
         _interstitialAd!.show();
         _interstitialAd = null;
       } else {
-        print('Interstitial Ad not ready yet, loading new one.');
+        // print('Interstitial Ad not ready yet, loading new one.');
         _loadInterstitialAd(); // Attempt to reload if it wasn't ready
       }
     }
@@ -184,7 +168,6 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
 
   @override
   void initState() {
-    _createBottomBannerAd();
     imageWorkpieceDiametr = Image.asset(
       imgMainPage,
       scale: 1.25,
@@ -214,7 +197,6 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
     for (var controller in _controllers) {
       controller.dispose();
     }
-    _bottomBannerAd.dispose();
     _interstitialAd?.dispose(); // Dispose interstitial ad
     super.dispose(); // Call super.dispose() last
   }
@@ -250,16 +232,16 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: _isBottomBannerAdLoaded
-            ? SizedBox(
-                height: _bottomBannerAd.size.height.toDouble(),
-                width: _bottomBannerAd.size.width.toDouble(),
-                child: AdWidget(ad: _bottomBannerAd),
-              )
-            : null,
+        key: _scaffoldKey, // ← добавьте
         resizeToAvoidBottomInset: false,
         backgroundColor: const Color(0xffEEEEEE),
         drawer: const CustomDrawer(),
+        onDrawerChanged: (isOpened) {
+          // ← добавьте
+          setState(() {
+            _isDrawerOpen = isOpened;
+          });
+        },
         appBar: AppBar(
           toolbarHeight: kAppbarHeight,
           title: Row(
@@ -289,120 +271,133 @@ class _SquareAndHexagonState extends State<SquareAndHexagon> {
             child: SizedBox(
           height: double.infinity,
           child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              const SizedBox(height: 10.0),
-              Align(child: imageWorkpieceDiametr),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text('D=1,414⋅a', style: TextStyle(fontSize: 20)),
-                  Text('D=1,155⋅b', style: TextStyle(fontSize: 20)),
-                ],
-              ),
-              const SizedBox(height: 20.0), //50
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    TFWidget(
-                      controllers: _controllers[0],
-                      onPressed: (value) {
-                        setState(() {});
-                        _calcSquare();
-                      },
-                      prefixText: 'a=',
-                      hintText: AppLocalizations.of(context)!.hinttext_square,
-                      inputFormatters: [
-                        formatDeny(),
-                        formatAllow(),
+            children: [
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const SizedBox(height: 10.0),
+                    Align(child: imageWorkpieceDiametr),
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text('D=1,414⋅a', style: TextStyle(fontSize: 20)),
+                        Text('D=1,155⋅b', style: TextStyle(fontSize: 20)),
                       ],
-                      onClearPressed: _handleClearPressed, // Добавлено общее управление для первого поля
                     ),
-                    TFWidget(
-                      controllers: _controllers[1],
-                      onPressed: (value) {
-                        // This onPressed is actually onChanged
-                        setState(() {});
-                        _calcHexagon();
-                      },
-                      prefixText: 'b=',
-                      hintText:AppLocalizations.of(context)!.hinttext_hexagon,
-                      inputFormatters: [
-                        formatDeny(),
-                        formatAllow(),
-                      ],
-                      onClearPressed: _handleClearPressed, // Pass the clear callback
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 10.0),
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 150.0,
-                      child: Text('D=${_controllers[2].text}',
-                          style: const TextStyle(fontSize: 20)),
-                    ),
-                    SizedBox(
-                      width: 150.0,
-                      child: Text('D=${_controllers[3].text}',
-                          style: const TextStyle(fontSize: 20)),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        AppLocalizations.of(context)!.history,
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                      TextButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll<Color>(
-                                Color(0xFFE0E0E0)),
-                            foregroundColor: WidgetStatePropertyAll<Color>(
-                                Color(0xFFFF0055)),
+                    const SizedBox(height: 20.0), //50
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          TFWidget(
+                            controllers: _controllers[0],
+                            onPressed: (value) {
+                              setState(() {});
+                              _calcSquare();
+                            },
+                            prefixText: 'a=',
+                            hintText:
+                                AppLocalizations.of(context)!.hinttext_square,
+                            inputFormatters: [
+                              formatDeny(),
+                              formatAllow(),
+                            ],
+                            onClearPressed:
+                                _handleClearPressed, // Добавлено общее управление для первого поля
                           ),
-                          onPressed: () async {
-                            await clearHistory();
-                            setState(() {});
-                          },
-                          child: Text(
-                            AppLocalizations.of(context)!.clear,
-                            style: const TextStyle(fontSize: 16),
-                          )),
-                    ]),
-              ),
-              Flexible(
-                child: CustomScrollView(shrinkWrap: true, slivers: [
-                  SliverCrossAxisGroup(
-                    slivers: [
-                      SliverPadding(
-                        padding: const EdgeInsets.only(
-                            left: 20.0, right: 20.0, bottom: 10.0),
-                        sliver: historySquareSliverList(),
+                          TFWidget(
+                            controllers: _controllers[1],
+                            onPressed: (value) {
+                              // This onPressed is actually onChanged
+                              setState(() {});
+                              _calcHexagon();
+                            },
+                            prefixText: 'b=',
+                            hintText:
+                                AppLocalizations.of(context)!.hinttext_hexagon,
+                            inputFormatters: [
+                              formatDeny(),
+                              formatAllow(),
+                            ],
+                            onClearPressed:
+                                _handleClearPressed, // Pass the clear callback
+                          ),
+                        ],
                       ),
-                      SliverPadding(
-                        padding: const EdgeInsets.only(
-                            left: 20.0, right: 20.0, bottom: 10.0),
-                        sliver: historyHexagonSliverList(),
+                    ),
+                    const SizedBox(height: 10.0),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            width: 150.0,
+                            child: Text('D=${_controllers[2].text}',
+                                style: const TextStyle(fontSize: 20)),
+                          ),
+                          SizedBox(
+                            width: 150.0,
+                            child: Text('D=${_controllers[3].text}',
+                                style: const TextStyle(fontSize: 20)),
+                          ),
+                        ],
                       ),
-                      
-                    ],
-                  ),
-                ]),
+                    ),
+                    const SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              AppLocalizations.of(context)!.history,
+                              style: const TextStyle(fontSize: 16),
+                            ),
+                            TextButton(
+                                style: const ButtonStyle(
+                                  backgroundColor:
+                                      WidgetStatePropertyAll<Color>(
+                                          Color(0xFFE0E0E0)),
+                                  foregroundColor:
+                                      WidgetStatePropertyAll<Color>(
+                                          Color(0xFFFF0055)),
+                                ),
+                                onPressed: () async {
+                                  await clearHistory();
+                                  setState(() {});
+                                },
+                                child: Text(
+                                  AppLocalizations.of(context)!.clear,
+                                  style: const TextStyle(fontSize: 16),
+                                )),
+                          ]),
+                    ),
+                    Flexible(
+                      child: CustomScrollView(shrinkWrap: true, slivers: [
+                        SliverCrossAxisGroup(
+                          slivers: [
+                            SliverPadding(
+                              padding: const EdgeInsets.only(
+                                  left: 20.0, right: 20.0, bottom: 10.0),
+                              sliver: historySquareSliverList(),
+                            ),
+                            SliverPadding(
+                              padding: const EdgeInsets.only(
+                                  left: 20.0, right: 20.0, bottom: 10.0),
+                              sliver: historyHexagonSliverList(),
+                            ),
+                          ],
+                        ),
+                      ]),
+                    ),
+                  ],
+                ),
               ),
+              if (!_isDrawerOpen)
+                AdMobBannerSecondary(adUnitId: AdHelper.mainAndTablePage),
             ],
           ),
         )));

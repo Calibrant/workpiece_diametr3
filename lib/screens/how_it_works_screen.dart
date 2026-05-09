@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workpiece_diametr/ad_helper.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
 import 'package:workpiece_diametr/widgets/step_card.dart';
@@ -31,8 +32,8 @@ class HowItWorksScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            _buildDiagramColumn(
-                                'assets/images/square_diag.png', 'D₁ = a × 1.414'),
+                            _buildDiagramColumn('assets/images/square_diag.png',
+                                'D₁ = a × 1.414'),
                             _buildDiagramColumn(
                                 'assets/images/hex_diag.png', 'D₂ = b × 1.155'),
                           ],
@@ -74,7 +75,7 @@ class HowItWorksScreen extends StatelessWidget {
             ),
           ),
           // Баннер прижат к низу, вне скролла
-          const AdMobBannerSecondary(),
+          AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
         ],
       ),
     );

@@ -163,4 +163,34 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get term_14_body => '공구 마모 보상을 위한 추가 직경(보통 0.5–2.0 mm).';
+
+  @override
+  String get units_label => '측정 단위';
+
+  @override
+  String get units_mm => '밀리미터 (mm)';
+
+  @override
+  String get units_inch => '인치 (inch)';
+
+  @override
+  String get units_select => '계산 및 표시를 위한 측정 단위를 선택하세요:';
+
+  @override
+  String get appbar_table_inch => '인치 단위 공작물 직경 표';
+
+  @override
+  String get history_cleared => '기록이 지워졌습니다';
+
+  @override
+  String get history_clear_confirm_title => '기록을 지우시겠습니까?';
+
+  @override
+  String get history_clear_confirm_body => '모든 기록이 영구적으로 삭제됩니다.';
+
+  @override
+  String get history_cancel => '취소';
+
+  @override
+  String get history_clear_confirm => '지우기';
 }

@@ -2,7 +2,7 @@ name: workpiece_diametr
 description: Workpiece diametr
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.2.0+12 #09.05.26
+version: 1.3.0+13 #27.05.26
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -44,5 +44,4 @@ flutter:
   generate: true
   assets:
     - assets/images/
-flutter_intl:
-  enabled: true
+

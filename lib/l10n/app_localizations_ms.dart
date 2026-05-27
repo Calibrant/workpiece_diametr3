@@ -163,4 +163,34 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get term_14_body => 'Diameter tambahan untuk mengimbangi haus alat (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Unit pengukuran';
+
+  @override
+  String get units_mm => 'Milimeter (mm)';
+
+  @override
+  String get units_inch => 'Inci (inch)';
+
+  @override
+  String get units_select => 'Pilih unit pengukuran untuk pengiraan dan paparan:';
+
+  @override
+  String get appbar_table_inch => 'Jadual diameter bahan kerja dalam inci';
+
+  @override
+  String get history_cleared => 'Sejarah dibersihkan';
+
+  @override
+  String get history_clear_confirm_title => 'Bersihkan sejarah?';
+
+  @override
+  String get history_clear_confirm_body => 'Semua rekod akan dipadamkan secara kekal.';
+
+  @override
+  String get history_cancel => 'Batal';
+
+  @override
+  String get history_clear_confirm => 'Bersihkan';
 }

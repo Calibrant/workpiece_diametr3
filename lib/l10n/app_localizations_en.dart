@@ -163,4 +163,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get term_14_body => 'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.';
+
+  @override
+  String get units_label => 'Units of measurement';
+
+  @override
+  String get units_mm => 'Millimeters (mm)';
+
+  @override
+  String get units_inch => 'Inches (inch)';
+
+  @override
+  String get units_select => 'Select unit of measurement for calculations and display:';
+
+  @override
+  String get appbar_table_inch => 'Table of workpiece diameters in inches';
+
+  @override
+  String get history_cleared => 'History cleared';
+
+  @override
+  String get history_clear_confirm_title => 'Clear history?';
+
+  @override
+  String get history_clear_confirm_body => 'All records will be permanently deleted.';
+
+  @override
+  String get history_cancel => 'Cancel';
+
+  @override
+  String get history_clear_confirm => 'Clear';
 }

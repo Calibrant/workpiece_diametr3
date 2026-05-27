@@ -163,4 +163,34 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get term_14_body => 'Diamètre supplémentaire pour compenser l’usure d’outil (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Unités de mesure';
+
+  @override
+  String get units_mm => 'Millimètres (mm)';
+
+  @override
+  String get units_inch => 'Pouces (inch)';
+
+  @override
+  String get units_select => 'Sélectionnez l\'unité de mesure pour les calculs et l\'affichage :';
+
+  @override
+  String get appbar_table_inch => 'Tableau des diamètres de pièces en pouces';
+
+  @override
+  String get history_cleared => 'Historique effacé';
+
+  @override
+  String get history_clear_confirm_title => 'Effacer l\'historique ?';
+
+  @override
+  String get history_clear_confirm_body => 'Tous les enregistrements seront supprimés définitivement.';
+
+  @override
+  String get history_cancel => 'Annuler';
+
+  @override
+  String get history_clear_confirm => 'Effacer';
 }

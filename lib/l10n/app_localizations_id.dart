@@ -163,4 +163,34 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get term_14_body => 'Diameter tambahan untuk mengkompensasi keausan alat (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Satuan pengukuran';
+
+  @override
+  String get units_mm => 'Milimeter (mm)';
+
+  @override
+  String get units_inch => 'Inci (inch)';
+
+  @override
+  String get units_select => 'Pilih satuan pengukuran untuk perhitungan dan tampilan:';
+
+  @override
+  String get appbar_table_inch => 'Tabel diameter benda kerja dalam inci';
+
+  @override
+  String get history_cleared => 'Riwayat dihapus';
+
+  @override
+  String get history_clear_confirm_title => 'Hapus riwayat?';
+
+  @override
+  String get history_clear_confirm_body => 'Semua catatan akan dihapus secara permanen.';
+
+  @override
+  String get history_cancel => 'Batal';
+
+  @override
+  String get history_clear_confirm => 'Hapus';
 }

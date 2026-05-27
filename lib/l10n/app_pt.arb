@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Constante matemática ≈ 1.155 para fórmula do hexágono.",
     "term_14_title": "Margem de usinagem",
-    "term_14_body": "Diâmetro adicional para compensar desgaste da ferramenta (0,5–2,0 mm)."
+    "term_14_body": "Diâmetro adicional para compensar desgaste da ferramenta (0,5–2,0 mm).",
+    "units_label": "Unidades de medida",
+    "units_mm": "Milímetros (mm)",
+    "units_inch": "Polegadas (inch)",
+    "units_select": "Selecione a unidade de medida para cálculos e exibição:",
+    "appbar_table_inch": "Tabela de diâmetros de peças em polegadas",
+    "history_cleared": "Histórico limpo",
+    "history_clear_confirm_title": "Limpar histórico?",
+    "history_clear_confirm_body": "Todos os registros serão excluídos permanentemente.",
+    "history_cancel": "Cancelar",
+    "history_clear_confirm": "Limpar"
 }

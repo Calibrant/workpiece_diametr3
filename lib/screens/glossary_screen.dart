@@ -16,7 +16,7 @@ class GlossaryScreen extends StatelessWidget {
       backgroundColor: const Color(0xFF222831),
       appBar: AppBar(
         title: Text(l10n.title_glossary),
-        actions: const [LanguageSwitcherButton()],
+      //  actions: const [LanguageSwitcherButton()],
       ),
       body: Column(
         children: [
@@ -58,7 +58,7 @@ class GlossaryScreen extends StatelessWidget {
             ),
           ),
           // Баннер прижат к низу, вне скролла
-          AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
+        //  AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
         ],
       ),
     );

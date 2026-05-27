@@ -163,4 +163,34 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get term_14_body => 'Đường kính bổ sung để bù hao mòn dụng cụ (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Đơn vị đo lường';
+
+  @override
+  String get units_mm => 'Milimét (mm)';
+
+  @override
+  String get units_inch => 'Inch (inch)';
+
+  @override
+  String get units_select => 'Chọn đơn vị đo lường cho tính toán và hiển thị:';
+
+  @override
+  String get appbar_table_inch => 'Bảng đường kính chi tiết theo inch';
+
+  @override
+  String get history_cleared => 'Lịch sử đã xóa';
+
+  @override
+  String get history_clear_confirm_title => 'Xóa lịch sử?';
+
+  @override
+  String get history_clear_confirm_body => 'Tất cả bản ghi sẽ bị xóa vĩnh viễn.';
+
+  @override
+  String get history_cancel => 'Hủy';
+
+  @override
+  String get history_clear_confirm => 'Xóa';
 }

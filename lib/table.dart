@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/updated_data_table.dart';
-import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
-import 'ad_helper.dart';
 import 'const.dart';
+import 'unit_provider.dart';
 
 class TableBlanksSquareAndHexagon extends StatefulWidget {
   const TableBlanksSquareAndHexagon({super.key});
 
   @override
-  State<TableBlanksSquareAndHexagon> createState() =>
-      _TableBlanksSquareAndHexagonState();
+  State<TableBlanksSquareAndHexagon> createState() => _TableBlanksSquareAndHexagonState();
 }
 
-class _TableBlanksSquareAndHexagonState
-    extends State<TableBlanksSquareAndHexagon> {
+class _TableBlanksSquareAndHexagonState extends State<TableBlanksSquareAndHexagon> {
   late Image imageTwo;
 
   ScrollController scrollController = ScrollController();
   bool showbtn = false;
+  double _bannerHeight = 0;
 
   @override
   void initState() {
@@ -46,21 +45,94 @@ class _TableBlanksSquareAndHexagonState
 
   @override
   Widget build(BuildContext context) {
+    final isInch = context.watch<UnitProvider>().currentUnit == AppUnit.inch;
+
     return MaterialApp(
-      theme: Theme.of(context).copyWith(
-          colorScheme: Theme.of(context)
-              .colorScheme
-              .copyWith(primary: const Color(0xff222831))),
+      theme: Theme.of(context).copyWith(colorScheme: Theme.of(context).colorScheme.copyWith(primary: const Color(0xff222831))),
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: ScrollConfiguration(
           behavior: const ScrollBehavior(),
           child: Scaffold(
             backgroundColor: const Color(0xffEEEEEE),
-            appBar: (AppBar(
+            appBar: AppBar(
               toolbarHeight: kAppbarHeight,
               title: Row(
                 children: [
+                  Expanded(
+                    child: Text(
+                      maxLines: 3,
+                      isInch ? AppLocalizations.of(context)!.appbar_table_inch : AppLocalizations.of(context)!.appbar_table,
+                      style: const TextStyle(color: Color(0xffEEEEEE), fontSize: 18),
+                    ),
+                  ),
+                ],
+              ),
+              leading: IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Icons.arrow_back)),
+            ),
+            body: Consumer<UnitProvider>(
+              builder: (context, unitProvider, child) {
+                return Column(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 900,
+                        decoration: const BoxDecoration(),
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 20, 20, 5),
+                          child: SingleChildScrollView(
+                            controller: scrollController,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Center(child: imageTwo),
+                                const SizedBox(
+                                  height: 10.0,
+                                ),
+                                UpdatedDataTable(unitProvider: unitProvider),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    /* AdMobBannerSecondary(
+                      adUnitId: AdHelper.mainAndTablePage,
+                      onBannerLoaded: (height) {
+                        setState(() => _bannerHeight = height);
+                      },
+                    ), */
+                  ],
+                );
+              },
+            ),
+            floatingActionButton: AnimatedOpacity(
+              duration: const Duration(milliseconds: 1000), //show/hide animation
+              opacity: showbtn ? 1.0 : 0.0, //set obacity to 1 on visible, or hide
+              child: Padding(
+                padding: EdgeInsets.only(bottom: _bannerHeight + 8),
+                child: FloatingActionButton(
+                  onPressed: () {
+                    scrollController.animateTo(
+                        //go to top of scroll
+                        0, //scroll offset to go
+                        duration: const Duration(milliseconds: 500), //duration of scroll
+                        curve: Curves.fastOutSlowIn //scroll type
+                        );
+                  },
+                  backgroundColor: Colors.amber[700],
+                  child: const Icon(Icons.arrow_upward),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+                /* children: [
                   Expanded(
                     child: Text(
                       maxLines: 3,
@@ -100,7 +172,12 @@ class _TableBlanksSquareAndHexagonState
                     ),
                   ),
                 ),
-                AdMobBannerSecondary(adUnitId: AdHelper.mainAndTablePage),
+                AdMobBannerSecondary(
+                  adUnitId: AdHelper.mainAndTablePage,
+                  onBannerLoaded: (height) {
+                    setState(() => _bannerHeight = height);
+                  },
+                ),
               ],
             ),
             floatingActionButton: AnimatedOpacity(
@@ -108,18 +185,21 @@ class _TableBlanksSquareAndHexagonState
                   const Duration(milliseconds: 1000), //show/hide animation
               opacity:
                   showbtn ? 1.0 : 0.0, //set obacity to 1 on visible, or hide
-              child: FloatingActionButton(
-                onPressed: () {
-                  scrollController.animateTo(
-                      //go to top of scroll
-                      0, //scroll offset to go
-                      duration: const Duration(
-                          milliseconds: 500), //duration of scroll
-                      curve: Curves.fastOutSlowIn //scroll type
-                      );
-                },
-                backgroundColor: Colors.amber[700],
-                child: const Icon(Icons.arrow_upward),
+              child: Padding(
+                padding: EdgeInsets.only(bottom: _bannerHeight + 8),
+                child: FloatingActionButton(
+                  onPressed: () {
+                    scrollController.animateTo(
+                        //go to top of scroll
+                        0, //scroll offset to go
+                        duration: const Duration(
+                            milliseconds: 500), //duration of scroll
+                        curve: Curves.fastOutSlowIn //scroll type
+                        );
+                  },
+                  backgroundColor: Colors.amber[700],
+                  child: const Icon(Icons.arrow_upward),
+                ),
               ),
             ),
           ),
@@ -128,3 +208,4 @@ class _TableBlanksSquareAndHexagonState
     );
   }
 }
+ */

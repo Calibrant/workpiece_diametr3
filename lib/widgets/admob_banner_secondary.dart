@@ -4,11 +4,10 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdMobBannerSecondary extends StatefulWidget {
   final String adUnitId; // ← ID передаётся снаружи
+  final ValueChanged<double>? onBannerLoaded;
 
-  const AdMobBannerSecondary({
-    super.key,
-    required this.adUnitId,
-  });
+  const AdMobBannerSecondary(
+      {super.key, required this.adUnitId, this.onBannerLoaded});
 
   @override
   State<AdMobBannerSecondary> createState() => _AdMobBannerSecondaryState();
@@ -42,9 +41,12 @@ class _AdMobBannerSecondaryState extends State<AdMobBannerSecondary> {
       request: const AdRequest(),
       size: adSize,
       listener: BannerAdListener(
+        // В onAdLoaded вызывайте:
         onAdLoaded: (Ad ad) {
-          debugPrint('✅ AdMob Secondary: баннер загружен');
-          if (mounted) setState(() => _isLoaded = true);
+          if (mounted) {
+            setState(() => _isLoaded = true);
+            widget.onBannerLoaded?.call(_bannerAd!.size.height.toDouble());
+          }
         },
         onAdFailedToLoad: (Ad ad, LoadAdError error) {
           debugPrint('❌ AdMob Secondary: ошибка — $error');

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:workpiece_diametr/const.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/screens/how_it_works_screen.dart';
 import 'package:workpiece_diametr/screens/glossary_screen.dart';
+import 'package:workpiece_diametr/table.dart';
+import 'package:workpiece_diametr/unit_provider.dart';
 
 import 'launch_url.dart';
 
@@ -12,10 +15,7 @@ class CustomDrawer extends StatelessWidget {
 
   Future<void> feedback() async {
     String? encodeQueryParameters(Map<String, String> params) {
-      return params.entries
-          .map((MapEntry<String, String> e) =>
-              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
-          .join('&');
+      return params.entries.map((MapEntry<String, String> e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}').join('&');
     }
 
     final Uri emailLauncherUri = Uri(
@@ -46,6 +46,42 @@ class CustomDrawer extends StatelessWidget {
               child: Center(
                 child: DrawerHeaderWidget(),
               )),
+          Consumer<UnitProvider>(
+            builder: (context, unitProvider, _) {
+              return ListTile(
+                leading: const Icon(Icons.straighten, color: Color(0xFF08D9D6)),
+                 title: Text(AppLocalizations.of(context)!.units_label),
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      'mm',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: unitProvider.currentUnit == AppUnit.mm ? FontWeight.bold : FontWeight.normal,
+                        color: unitProvider.currentUnit == AppUnit.mm ? Colors.amber[700] : Colors.grey,
+                      ),
+                    ),
+                    Switch(
+                      value: unitProvider.currentUnit == AppUnit.inch,
+                      activeColor: Colors.amber[700],
+                      onChanged: (val) {
+                        unitProvider.setUnit(val ? AppUnit.inch : AppUnit.mm);
+                      },
+                    ),
+                    Text(
+                      'in',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: unitProvider.currentUnit == AppUnit.inch ? FontWeight.bold : FontWeight.normal,
+                        color: unitProvider.currentUnit == AppUnit.inch ? Colors.amber[700] : Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
           ListTile(
             leading: const Icon(Icons.help_outline, color: Color(0xFF08D9D6)),
             title: Text(AppLocalizations.of(context)!.menu_how_it_works),
@@ -60,6 +96,14 @@ class CustomDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.push(context, MaterialPageRoute(builder: (_) => const GlossaryScreen()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.table_chart, color: Color(0xFF08D9D6)),
+            title: Text(AppLocalizations.of(context)!.appbar_table),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const TableBlanksSquareAndHexagon()));
             },
           ),
           ListTile(
@@ -92,8 +136,7 @@ class VersionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Version 1.0.9',
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500));
+    return const Text('Version 1.3.0', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500));
   }
 }
 
@@ -104,8 +147,7 @@ class DrawerTitlePrivacyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(AppLocalizations.of(context)!.drawer_title_privacy,
-        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500));
+    return Text(AppLocalizations.of(context)!.drawer_title_privacy, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500));
   }
 }
 
@@ -132,10 +174,7 @@ class DrawerHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       AppLocalizations.of(context)!.drawer_header,
-      style: Theme.of(context)
-          .textTheme
-          .titleLarge!
-          .copyWith(color: Colors.yellow, fontSize: 24),
+      style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.yellow, fontSize: 24),
     );
   }
 }

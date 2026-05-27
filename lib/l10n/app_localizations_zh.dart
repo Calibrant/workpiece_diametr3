@@ -163,4 +163,34 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get term_14_body => '为补偿刀具磨损和表面缺陷而增加的直径。通常 0.5–2.0 mm。';
+
+  @override
+  String get units_label => '计量单位';
+
+  @override
+  String get units_mm => '毫米 (mm)';
+
+  @override
+  String get units_inch => '英寸 (inch)';
+
+  @override
+  String get units_select => '选择计算和显示的计量单位：';
+
+  @override
+  String get appbar_table_inch => '工件直径英寸对照表';
+
+  @override
+  String get history_cleared => '历史记录已清除';
+
+  @override
+  String get history_clear_confirm_title => '清除历史记录？';
+
+  @override
+  String get history_clear_confirm_body => '所有记录将被永久删除。';
+
+  @override
+  String get history_cancel => '取消';
+
+  @override
+  String get history_clear_confirm => '清除';
 }

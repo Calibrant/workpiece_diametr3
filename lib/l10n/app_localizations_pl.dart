@@ -163,4 +163,34 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get term_14_body => 'Dodatkowa średnica kompensująca zużycie narzędzia (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Jednostki miary';
+
+  @override
+  String get units_mm => 'Milimetry (mm)';
+
+  @override
+  String get units_inch => 'Cale (inch)';
+
+  @override
+  String get units_select => 'Wybierz jednostkę miary do obliczeń i wyświetlania:';
+
+  @override
+  String get appbar_table_inch => 'Tabela średnic detali w calach';
+
+  @override
+  String get history_cleared => 'Historia wyczyszczona';
+
+  @override
+  String get history_clear_confirm_title => 'Wyczyścić historię?';
+
+  @override
+  String get history_clear_confirm_body => 'Wszystkie rekordy zostaną trwale usunięte.';
+
+  @override
+  String get history_cancel => 'Anuluj';
+
+  @override
+  String get history_clear_confirm => 'Wyczyść';
 }

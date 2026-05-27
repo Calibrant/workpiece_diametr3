@@ -446,6 +446,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.'**
   String get term_14_body;
+
+  /// No description provided for @units_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Units of measurement'**
+  String get units_label;
+
+  /// No description provided for @units_mm.
+  ///
+  /// In en, this message translates to:
+  /// **'Millimeters (mm)'**
+  String get units_mm;
+
+  /// No description provided for @units_inch.
+  ///
+  /// In en, this message translates to:
+  /// **'Inches (inch)'**
+  String get units_inch;
+
+  /// No description provided for @units_select.
+  ///
+  /// In en, this message translates to:
+  /// **'Select unit of measurement for calculations and display:'**
+  String get units_select;
+
+  /// No description provided for @appbar_table_inch.
+  ///
+  /// In en, this message translates to:
+  /// **'Table of workpiece diameters in inches'**
+  String get appbar_table_inch;
+
+  /// No description provided for @history_cleared.
+  ///
+  /// In en, this message translates to:
+  /// **'History cleared'**
+  String get history_cleared;
+
+  /// No description provided for @history_clear_confirm_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear history?'**
+  String get history_clear_confirm_title;
+
+  /// No description provided for @history_clear_confirm_body.
+  ///
+  /// In en, this message translates to:
+  /// **'All records will be permanently deleted.'**
+  String get history_clear_confirm_body;
+
+  /// No description provided for @history_cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get history_cancel;
+
+  /// No description provided for @history_clear_confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get history_clear_confirm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -50,5 +50,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Mathematical constant ≈ 1.155. Used in hexagon shaping formula: D = b × 2/√3.",
     "term_14_title": "Machining Allowance",
-    "term_14_body": "Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm."
+    "term_14_body": "Additional diameter added to the calculated minimum to compensate for tool wear and surface imperfections. Typically 0.5–2.0 mm.",
+    "units_label": "Units of measurement",
+    "units_mm": "Millimeters (mm)",
+    "units_inch": "Inches (inch)",
+    "units_select": "Select unit of measurement for calculations and display:",
+    "appbar_table_inch": "Table of workpiece diameters in inches",
+    "history_cleared": "History cleared",
+    "history_clear_confirm_title": "Clear history?",
+    "history_clear_confirm_body": "All records will be permanently deleted.",
+    "history_cancel": "Cancel",
+    "history_clear_confirm": "Clear"
 }

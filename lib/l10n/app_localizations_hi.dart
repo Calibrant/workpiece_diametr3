@@ -163,4 +163,34 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get term_14_body => 'टूल वियर के लिए अतिरिक्त व्यास (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'मापन की इकाइयाँ';
+
+  @override
+  String get units_mm => 'मिलीमीटर (mm)';
+
+  @override
+  String get units_inch => 'इंच (inch)';
+
+  @override
+  String get units_select => 'गणना और प्रदर्शन के लिए मापन की इकाई चुनें:';
+
+  @override
+  String get appbar_table_inch => 'इंच में workpiece व्यास की तालिका';
+
+  @override
+  String get history_cleared => 'इतिहास साफ किया गया';
+
+  @override
+  String get history_clear_confirm_title => 'इतिहास साफ करें?';
+
+  @override
+  String get history_clear_confirm_body => 'सभी रिकॉर्ड स्थायी रूप से मिटा दिए जाएंगे।';
+
+  @override
+  String get history_cancel => 'रद्द करें';
+
+  @override
+  String get history_clear_confirm => 'साफ करें';
 }

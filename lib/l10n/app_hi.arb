@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "गणितीय स्थिरांक ≈ 1.155, षट्कोण सूत्र के लिए.",
     "term_14_title": "Machining Allowance",
-    "term_14_body": "टूल वियर के लिए अतिरिक्त व्यास (0.5–2.0 mm)."
+    "term_14_body": "टूल वियर के लिए अतिरिक्त व्यास (0.5–2.0 mm).",
+    "units_label": "मापन की इकाइयाँ",
+    "units_mm": "मिलीमीटर (mm)",
+    "units_inch": "इंच (inch)",
+    "units_select": "गणना और प्रदर्शन के लिए मापन की इकाई चुनें:",
+    "appbar_table_inch": "इंच में workpiece व्यास की तालिका",
+    "history_cleared": "इतिहास साफ किया गया",
+    "history_clear_confirm_title": "इतिहास साफ करें?",
+    "history_clear_confirm_body": "सभी रिकॉर्ड स्थायी रूप से मिटा दिए जाएंगे।",
+    "history_cancel": "रद्द करें",
+    "history_clear_confirm": "साफ करें"
 }

@@ -16,7 +16,7 @@ class HowItWorksScreen extends StatelessWidget {
       backgroundColor: const Color(0xFF222831),
       appBar: AppBar(
         title: Text(l10n.title_how_it_works),
-        actions: const [LanguageSwitcherButton()],
+       // actions: const [LanguageSwitcherButton()],
       ),
       body: Column(
         children: [
@@ -75,7 +75,7 @@ class HowItWorksScreen extends StatelessWidget {
             ),
           ),
           // Баннер прижат к низу, вне скролла
-          AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
+        //  AdMobBannerSecondary(adUnitId: AdHelper.secondaryBannerAdUnitId),
         ],
       ),
     );

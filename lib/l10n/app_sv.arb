@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Matematisk konstant ≈ 1.155 för sexkantsformeln.",
     "term_14_title": "Bearbetningstillägg",
-    "term_14_body": "Extra diameter för att kompensera verktygsslitage (0,5–2,0 mm)."
+    "term_14_body": "Extra diameter för att kompensera verktygsslitage (0,5–2,0 mm).",
+    "units_label": "Måttenheter",
+    "units_mm": "Millimeter (mm)",
+    "units_inch": "Tum (inch)",
+    "units_select": "Välj måttenhet för beräkningar och visning:",
+    "appbar_table_inch": "Tabell över arbetsstyckenas diameter i tum",
+    "history_cleared": "Historik rensad",
+    "history_clear_confirm_title": "Rensa historik?",
+    "history_clear_confirm_body": "Alla poster kommer att raderas permanent.",
+    "history_cancel": "Avbryt",
+    "history_clear_confirm": "Rensa"
 }

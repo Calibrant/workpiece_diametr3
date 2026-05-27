@@ -163,4 +163,34 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get term_14_body => 'ເສັ້ນຜ່າເພີ່ມເຕີມເພື່ອຊົດເຊີຍການສວມໃຊ້ (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Viyesu vya kuyesera';
+
+  @override
+  String get units_mm => 'Milimita (mm)';
+
+  @override
+  String get units_inch => 'Inchi (inch)';
+
+  @override
+  String get units_select => 'Sankhani yuniti ya kuyesera pa mawerengero ndi chiwonetsero:';
+
+  @override
+  String get appbar_table_inch => 'Tebulo la ma diameter a workpiece mu inchi';
+
+  @override
+  String get history_cleared => 'Mbiri yachotsedwa';
+
+  @override
+  String get history_clear_confirm_title => 'Chotsa mbiri?';
+
+  @override
+  String get history_clear_confirm_body => 'Zolemba zonse zichotsedwa mpaka muyaya.';
+
+  @override
+  String get history_cancel => 'Bweza';
+
+  @override
+  String get history_clear_confirm => 'Chotsa';
 }

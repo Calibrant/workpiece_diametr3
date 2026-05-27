@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Costante matematica ≈ 1.155 per la formula dell'esagono.",
     "term_14_title": "Sovrametallo di lavorazione",
-    "term_14_body": "Diametro aggiuntivo per compensare usura utensile (0,5–2,0 mm)."
+    "term_14_body": "Diametro aggiuntivo per compensare usura utensile (0,5–2,0 mm).",
+    "units_label": "Unità di misura",
+    "units_mm": "Millimetri (mm)",
+    "units_inch": "Pollici (inch)",
+    "units_select": "Seleziona l'unità di misura per calcoli e visualizzazione:",
+    "appbar_table_inch": "Tabella dei diametri dei pezzi in pollici",
+    "history_cleared": "Cronologia cancellata",
+    "history_clear_confirm_title": "Cancellare la cronologia?",
+    "history_clear_confirm_body": "Tutti i record saranno eliminati permanentemente.",
+    "history_cancel": "Annulla",
+    "history_clear_confirm": "Cancella"
 }

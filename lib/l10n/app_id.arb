@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Konstanta matematika ≈ 1.155 untuk rumus segi enam.",
     "term_14_title": "Machining Allowance",
-    "term_14_body": "Diameter tambahan untuk mengkompensasi keausan alat (0.5–2.0 mm)."
+    "term_14_body": "Diameter tambahan untuk mengkompensasi keausan alat (0.5–2.0 mm).",
+    "units_label": "Satuan pengukuran",
+    "units_mm": "Milimeter (mm)",
+    "units_inch": "Inci (inch)",
+    "units_select": "Pilih satuan pengukuran untuk perhitungan dan tampilan:",
+    "appbar_table_inch": "Tabel diameter benda kerja dalam inci",
+    "history_cleared": "Riwayat dihapus",
+    "history_clear_confirm_title": "Hapus riwayat?",
+    "history_clear_confirm_body": "Semua catatan akan dihapus secara permanen.",
+    "history_cancel": "Batal",
+    "history_clear_confirm": "Hapus"
 }

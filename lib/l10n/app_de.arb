@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Mathematische Konstante ≈ 1,155. Wird in der Sechskant-Formel verwendet: D = b × 2/√3.",
     "term_14_title": "Bearbeitungszugabe",
-    "term_14_body": "Zusätzlicher Durchmesser zum berechneten Minimum, um Werkzeugverschleiß und Oberflächenfehler auszugleichen. Typisch 0,5–2,0 mm."
+    "term_14_body": "Zusätzlicher Durchmesser zum berechneten Minimum, um Werkzeugverschleiß und Oberflächenfehler auszugleichen. Typisch 0,5–2,0 mm.",
+    "units_label": "Maßeinheiten",
+    "units_mm": "Millimeter (mm)",
+    "units_inch": "Zoll (inch)",
+    "units_select": "Wähle die Maßeinheit für Berechnungen und Anzeige:",
+    "appbar_table_inch": "Tabelle der Werkstückdurchmesser in Zoll",
+    "history_cleared": "Verlauf gelöscht",
+    "history_clear_confirm_title": "Verlauf löschen?",
+    "history_clear_confirm_body": "Alle Einträge werden dauerhaft gelöscht.",
+    "history_cancel": "Abbrechen",
+    "history_clear_confirm": "Löschen"
 }

@@ -163,4 +163,34 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get term_14_body => 'Extra diameter om slijtage en imperfecties te compenseren (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Maateenheden';
+
+  @override
+  String get units_mm => 'Millimeters (mm)';
+
+  @override
+  String get units_inch => 'Inches (inch)';
+
+  @override
+  String get units_select => 'Selecteer de maateenheid voor berekeningen en weergave:';
+
+  @override
+  String get appbar_table_inch => 'Tabel met diameters van werkstukken in inches';
+
+  @override
+  String get history_cleared => 'Geschiedenis gewist';
+
+  @override
+  String get history_clear_confirm_title => 'Geschiedenis wissen?';
+
+  @override
+  String get history_clear_confirm_body => 'Alle records worden permanent verwijderd.';
+
+  @override
+  String get history_cancel => 'Annuleren';
+
+  @override
+  String get history_clear_confirm => 'Wissen';
 }

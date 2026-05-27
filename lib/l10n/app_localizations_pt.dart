@@ -163,4 +163,34 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get term_14_body => 'Diâmetro adicional para compensar desgaste da ferramenta (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Unidades de medida';
+
+  @override
+  String get units_mm => 'Milímetros (mm)';
+
+  @override
+  String get units_inch => 'Polegadas (inch)';
+
+  @override
+  String get units_select => 'Selecione a unidade de medida para cálculos e exibição:';
+
+  @override
+  String get appbar_table_inch => 'Tabela de diâmetros de peças em polegadas';
+
+  @override
+  String get history_cleared => 'Histórico limpo';
+
+  @override
+  String get history_clear_confirm_title => 'Limpar histórico?';
+
+  @override
+  String get history_clear_confirm_body => 'Todos os registros serão excluídos permanentemente.';
+
+  @override
+  String get history_cancel => 'Cancelar';
+
+  @override
+  String get history_clear_confirm => 'Limpar';
 }

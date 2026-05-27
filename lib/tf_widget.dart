@@ -26,18 +26,29 @@ class TFWidget extends StatefulWidget {
 class _TFWidgetState extends State<TFWidget> {
   late String _lastText;
 
+  late FocusNode _focusNode;
+
   @override
   void initState() {
     super.initState();
     _lastText = widget.controllers.text;
     // Добавляем слушатель для отслеживания изменений текста
     widget.controllers.addListener(_handleTextChange);
+
+    _focusNode = FocusNode();
+    _focusNode.addListener(() {
+      // Фокус потерян = клавиатура закрыта
+      if (!_focusNode.hasFocus && widget.controllers.text.isNotEmpty) {
+        widget.onPressed(widget.controllers.text); // ← пишем в историю
+      }
+    });
   }
 
   @override
   void dispose() {
     // Удаляем слушатель при уничтожении виджета
     widget.controllers.removeListener(_handleTextChange);
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -53,7 +64,10 @@ class _TFWidgetState extends State<TFWidget> {
   Widget build(BuildContext context) {
     return TextField(
       controller: widget.controllers,
-      onChanged: widget.onPressed,
+      focusNode: _focusNode, // ← добавить
+      onChanged: (value) {}, // пусто — только обновляет контроллер
+      // onSubmitted: (value) => widget.onPressed(value), // Enter на клавиатуре
+      // onChanged: widget.onPressed,
       inputFormatters: widget.inputFormatters,
       maxLength: 12,
       keyboardType: TextInputType.number,
@@ -64,13 +78,16 @@ class _TFWidgetState extends State<TFWidget> {
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(5.0)),
           filled: true,
           fillColor: const Color(0xffFFD369),
-          prefixText: widget.prefixText,
+          prefix: Text(
+            widget.prefixText,
+            style: const TextStyle(fontSize: 16, color: Colors.black87),
+          ),
+          //prefixText: widget.prefixText,
           hintText: widget.hintText,
           suffixIcon: IconButton(
             onPressed: () {
               widget.controllers.clear();
-              widget.onPressed(''); // Уведомляем слушателя об очистке
-              // onClearPressed?.call() теперь вызовется автоматически через _handleTextChange
+              // widget.onPressed(''); // Уведомляем слушателя об очистке
             },
             icon: const Icon(Icons.clear, size: 20),
           )),

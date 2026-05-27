@@ -163,4 +163,34 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get term_14_body => 'قطر إضافي يُضاف إلى الحد الأدنى المحسوب لتعويض تآكل الأداة وعيوب السطح. عادة 0.5–2.0 ملم.';
+
+  @override
+  String get units_label => 'وحدات القياس';
+
+  @override
+  String get units_mm => 'مليمتر (mm)';
+
+  @override
+  String get units_inch => 'إنش (inch)';
+
+  @override
+  String get units_select => 'اختر وحدة القياس للحسابات والعرض:';
+
+  @override
+  String get appbar_table_inch => 'جدول أقطار القطع بالإنش';
+
+  @override
+  String get history_cleared => 'تم مسح التاريخ';
+
+  @override
+  String get history_clear_confirm_title => 'مسح التاريخ؟';
+
+  @override
+  String get history_clear_confirm_body => 'سيتم حذف جميع السجلات نهائياً.';
+
+  @override
+  String get history_cancel => 'إلغاء';
+
+  @override
+  String get history_clear_confirm => 'مسح';
 }

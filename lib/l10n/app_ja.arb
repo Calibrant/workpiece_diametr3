@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "数学定数 ≈ 1.155。六角加工公式で使用。",
     "term_14_title": "加工代",
-    "term_14_body": "工具摩耗補正のための追加直径（通常0.5–2.0 mm）。"
+    "term_14_body": "工具摩耗補正のための追加直径（通常0.5–2.0 mm）。",
+    "units_label": "測定単位",
+    "units_mm": "ミリメートル (mm)",
+    "units_inch": "インチ (inch)",
+    "units_select": "計算と表示の測定単位を選択してください：",
+    "appbar_table_inch": "インチ表記の workpiece 直径表",
+    "history_cleared": "履歴を消去しました",
+    "history_clear_confirm_title": "履歴を消去しますか？",
+    "history_clear_confirm_body": "すべての記録が完全に削除されます。",
+    "history_cancel": "キャンセル",
+    "history_clear_confirm": "消去"
 }

@@ -163,4 +163,34 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get term_14_body => 'Takım aşınmasını telafi etmek için eklenen çap (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Ölçü birimleri';
+
+  @override
+  String get units_mm => 'Milimetre (mm)';
+
+  @override
+  String get units_inch => 'İnç (inch)';
+
+  @override
+  String get units_select => 'Hesaplamalar ve görüntüleme için ölçü birimi seçin:';
+
+  @override
+  String get appbar_table_inch => 'İnç cinsinden parça çapları tablosu';
+
+  @override
+  String get history_cleared => 'Geçmiş temizlendi';
+
+  @override
+  String get history_clear_confirm_title => 'Geçmiş temizlensin mi?';
+
+  @override
+  String get history_clear_confirm_body => 'Tüm kayıtlar kalıcı olarak silinecektir.';
+
+  @override
+  String get history_cancel => 'İptal';
+
+  @override
+  String get history_clear_confirm => 'Temizle';
 }

@@ -163,4 +163,34 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get term_14_body => 'Дополнительный диаметр для компенсации износа инструмента (0,5–2,0 мм).';
+
+  @override
+  String get units_label => 'Единицы измерения';
+
+  @override
+  String get units_mm => 'Миллиметры (мм)';
+
+  @override
+  String get units_inch => 'Дюймы (inch)';
+
+  @override
+  String get units_select => 'Выберите единицу измерения для расчётов и отображения:';
+
+  @override
+  String get appbar_table_inch => 'Таблица диаметров заготовок в дюймах';
+
+  @override
+  String get history_cleared => 'История очищена';
+
+  @override
+  String get history_clear_confirm_title => 'Очистить историю?';
+
+  @override
+  String get history_clear_confirm_body => 'Все записи будут безвозвратно удалены.';
+
+  @override
+  String get history_cancel => 'Отмена';
+
+  @override
+  String get history_clear_confirm => 'Очистить';
 }

@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Mathematical constant ≈ 1.155 para sa hexagon formula.",
     "term_14_title": "Machining Allowance",
-    "term_14_body": "Dagdag na diameter para sa tool wear at surface imperfections (0.5–2.0 mm)."
+    "term_14_body": "Dagdag na diameter para sa tool wear at surface imperfections (0.5–2.0 mm).",
+    "units_label": "Mittayksiköt",
+    "units_mm": "Millimetrit (mm)",
+    "units_inch": "Tuumat (inch)",
+    "units_select": "Valitse mittayksikkö laskentoihin ja näyttöön:",
+    "appbar_table_inch": "Työkappaleiden halkaisijataulukko tuumina",
+    "history_cleared": "Historia tyhjennetty",
+    "history_clear_confirm_title": "Tyhjentää historia?",
+    "history_clear_confirm_body": "Kaikki merkinnät poistetaan pysyvästi.",
+    "history_cancel": "Peruuta",
+    "history_clear_confirm": "Tyhjennä"
 }

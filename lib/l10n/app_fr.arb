@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Constante mathématique ≈ 1.155 utilisée pour l’hexagone.",
     "term_14_title": "Surépaisseur d’usinage",
-    "term_14_body": "Diamètre supplémentaire pour compenser l’usure d’outil (0,5–2,0 mm)."
+    "term_14_body": "Diamètre supplémentaire pour compenser l’usure d’outil (0,5–2,0 mm).",
+    "units_label": "Unités de mesure",
+    "units_mm": "Millimètres (mm)",
+    "units_inch": "Pouces (inch)",
+    "units_select": "Sélectionnez l'unité de mesure pour les calculs et l'affichage :",
+    "appbar_table_inch": "Tableau des diamètres de pièces en pouces",
+    "history_cleared": "Historique effacé",
+    "history_clear_confirm_title": "Effacer l'historique ?",
+    "history_clear_confirm_body": "Tous les enregistrements seront supprimés définitivement.",
+    "history_cancel": "Annuler",
+    "history_clear_confirm": "Effacer"
 }

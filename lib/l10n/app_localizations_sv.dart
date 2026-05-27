@@ -163,4 +163,34 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get term_14_body => 'Extra diameter för att kompensera verktygsslitage (0,5–2,0 mm).';
+
+  @override
+  String get units_label => 'Måttenheter';
+
+  @override
+  String get units_mm => 'Millimeter (mm)';
+
+  @override
+  String get units_inch => 'Tum (inch)';
+
+  @override
+  String get units_select => 'Välj måttenhet för beräkningar och visning:';
+
+  @override
+  String get appbar_table_inch => 'Tabell över arbetsstyckenas diameter i tum';
+
+  @override
+  String get history_cleared => 'Historik rensad';
+
+  @override
+  String get history_clear_confirm_title => 'Rensa historik?';
+
+  @override
+  String get history_clear_confirm_body => 'Alla poster kommer att raderas permanent.';
+
+  @override
+  String get history_cancel => 'Avbryt';
+
+  @override
+  String get history_clear_confirm => 'Rensa';
 }

@@ -5,18 +5,22 @@ import 'package:provider/provider.dart';
 import 'package:workpiece_diametr/providers/locale_provider.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
 import 'package:workpiece_diametr/square_hexagon.dart';
+import 'package:workpiece_diametr/unit_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
-  
+
   final localeProvider = LocaleProvider();
   await localeProvider.loadSavedLocale();
 
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => localeProvider,
-      child: const MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => localeProvider),
+        ChangeNotifierProvider(create: (_) => UnitProvider()),
+      ],
+      child: const MyApp(), // Ваш основной виджет приложения
     ),
   );
 }
@@ -48,8 +52,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xff222831),
             brightness: Brightness.light,
-          )
-          ),
+          )),
       home: const SquareAndHexagon(title: 'Workpiece diameter'),
     );
   }

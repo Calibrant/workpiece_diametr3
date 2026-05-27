@@ -163,4 +163,34 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get term_14_body => 'Diámetro adicional añadido al mínimo calculado para compensar desgaste de herramienta e imperfecciones. Típicamente 0.5–2.0 mm.';
+
+  @override
+  String get units_label => 'Unidades de medida';
+
+  @override
+  String get units_mm => 'Milímetros (mm)';
+
+  @override
+  String get units_inch => 'Pulgadas (inch)';
+
+  @override
+  String get units_select => 'Selecciona la unidad de medida para cálculos y visualización:';
+
+  @override
+  String get appbar_table_inch => 'Tabla de diámetros de piezas en pulgadas';
+
+  @override
+  String get history_cleared => 'Historial borrado';
+
+  @override
+  String get history_clear_confirm_title => '¿Borrar historial?';
+
+  @override
+  String get history_clear_confirm_body => 'Todos los registros se eliminarán permanentemente.';
+
+  @override
+  String get history_cancel => 'Cancelar';
+
+  @override
+  String get history_clear_confirm => 'Borrar';
 }

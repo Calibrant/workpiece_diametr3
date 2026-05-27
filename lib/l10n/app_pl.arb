@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Stała matematyczna ≈ 1.155 używana w formule sześciokąta.",
     "term_14_title": "Naddatek obróbkowy",
-    "term_14_body": "Dodatkowa średnica kompensująca zużycie narzędzia (0,5–2,0 mm)."
+    "term_14_body": "Dodatkowa średnica kompensująca zużycie narzędzia (0,5–2,0 mm).",
+    "units_label": "Jednostki miary",
+    "units_mm": "Milimetry (mm)",
+    "units_inch": "Cale (inch)",
+    "units_select": "Wybierz jednostkę miary do obliczeń i wyświetlania:",
+    "appbar_table_inch": "Tabela średnic detali w calach",
+    "history_cleared": "Historia wyczyszczona",
+    "history_clear_confirm_title": "Wyczyścić historię?",
+    "history_clear_confirm_body": "Wszystkie rekordy zostaną trwale usunięte.",
+    "history_cancel": "Anuluj",
+    "history_clear_confirm": "Wyczyść"
 }

@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "数学常数 ≈ 1.155，用于六边形加工公式。",
     "term_14_title": "加工余量",
-    "term_14_body": "为补偿刀具磨损和表面缺陷而增加的直径。通常 0.5–2.0 mm。"
+    "term_14_body": "为补偿刀具磨损和表面缺陷而增加的直径。通常 0.5–2.0 mm。",
+    "units_label": "计量单位",
+    "units_mm": "毫米 (mm)",
+    "units_inch": "英寸 (inch)",
+    "units_select": "选择计算和显示的计量单位：",
+    "appbar_table_inch": "工件直径英寸对照表",
+    "history_cleared": "历史记录已清除",
+    "history_clear_confirm_title": "清除历史记录？",
+    "history_clear_confirm_body": "所有记录将被永久删除。",
+    "history_cancel": "取消",
+    "history_clear_confirm": "清除"
 }

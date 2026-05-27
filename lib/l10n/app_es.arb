@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Constante matemática ≈ 1.155. Usada en la fórmula de hexágono: D = b × 2/√3.",
     "term_14_title": "Margen de mecanizado",
-    "term_14_body": "Diámetro adicional añadido al mínimo calculado para compensar desgaste de herramienta e imperfecciones. Típicamente 0.5–2.0 mm."
+    "term_14_body": "Diámetro adicional añadido al mínimo calculado para compensar desgaste de herramienta e imperfecciones. Típicamente 0.5–2.0 mm.",
+    "units_label": "Unidades de medida",
+    "units_mm": "Milímetros (mm)",
+    "units_inch": "Pulgadas (inch)",
+    "units_select": "Selecciona la unidad de medida para cálculos y visualización:",
+    "appbar_table_inch": "Tabla de diámetros de piezas en pulgadas",
+    "history_cleared": "Historial borrado",
+    "history_clear_confirm_title": "¿Borrar historial?",
+    "history_clear_confirm_body": "Todos los registros se eliminarán permanentemente.",
+    "history_cancel": "Cancelar",
+    "history_clear_confirm": "Borrar"
 }

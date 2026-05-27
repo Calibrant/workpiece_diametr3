@@ -163,4 +163,34 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get term_14_body => 'Dagdag na diameter para sa tool wear at surface imperfections (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Mittayksiköt';
+
+  @override
+  String get units_mm => 'Millimetrit (mm)';
+
+  @override
+  String get units_inch => 'Tuumat (inch)';
+
+  @override
+  String get units_select => 'Valitse mittayksikkö laskentoihin ja näyttöön:';
+
+  @override
+  String get appbar_table_inch => 'Työkappaleiden halkaisijataulukko tuumina';
+
+  @override
+  String get history_cleared => 'Historia tyhjennetty';
+
+  @override
+  String get history_clear_confirm_title => 'Tyhjentää historia?';
+
+  @override
+  String get history_clear_confirm_body => 'Kaikki merkinnät poistetaan pysyvästi.';
+
+  @override
+  String get history_cancel => 'Peruuta';
+
+  @override
+  String get history_clear_confirm => 'Tyhjennä';
 }

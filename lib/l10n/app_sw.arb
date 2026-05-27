@@ -49,5 +49,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Kigezo cha hisabati ≈ 1.155.",
     "term_14_title": "Machining Allowance",
-    "term_14_body": "Kipenyo cha ziada ili kufidia kuvaa kwa zana (0.5–2.0 mm)."
+    "term_14_body": "Kipenyo cha ziada ili kufidia kuvaa kwa zana (0.5–2.0 mm).",
+    "units_label": "Vipimo vya kipimo",
+    "units_mm": "Milimita (mm)",
+    "units_inch": "Inchi (inch)",
+    "units_select": "Chagua kipimo cha kipimo kwa mahesabu na kuonyesha:",
+    "appbar_table_inch": "Jedwali la kipenyo cha workpiece kwa inchi",
+    "history_cleared": "Historia imefutwa",
+    "history_clear_confirm_title": "Futa historia?",
+    "history_clear_confirm_body": "Rekodi zote zitafutwa kabisa.",
+    "history_cancel": "Ghairi",
+    "history_clear_confirm": "Futa"
 }

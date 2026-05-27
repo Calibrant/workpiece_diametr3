@@ -46,5 +46,15 @@
     "term_13_title": "2/√3",
     "term_13_body": "Wiskundige constante ≈ 1.155 voor zeshoeksformule.",
     "term_14_title": "Bewerkingstoeslag",
-    "term_14_body": "Extra diameter om slijtage en imperfecties te compenseren (0,5–2,0 mm)."
+    "term_14_body": "Extra diameter om slijtage en imperfecties te compenseren (0,5–2,0 mm).",
+    "units_label": "Maateenheden",
+    "units_mm": "Millimeters (mm)",
+    "units_inch": "Inches (inch)",
+    "units_select": "Selecteer de maateenheid voor berekeningen en weergave:",
+    "appbar_table_inch": "Tabel met diameters van werkstukken in inches",
+    "history_cleared": "Geschiedenis gewist",
+    "history_clear_confirm_title": "Geschiedenis wissen?",
+    "history_clear_confirm_body": "Alle records worden permanent verwijderd.",
+    "history_cancel": "Annuleren",
+    "history_clear_confirm": "Wissen"
 }

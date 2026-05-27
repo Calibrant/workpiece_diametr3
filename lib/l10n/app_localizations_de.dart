@@ -163,4 +163,34 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get term_14_body => 'Zusätzlicher Durchmesser zum berechneten Minimum, um Werkzeugverschleiß und Oberflächenfehler auszugleichen. Typisch 0,5–2,0 mm.';
+
+  @override
+  String get units_label => 'Maßeinheiten';
+
+  @override
+  String get units_mm => 'Millimeter (mm)';
+
+  @override
+  String get units_inch => 'Zoll (inch)';
+
+  @override
+  String get units_select => 'Wähle die Maßeinheit für Berechnungen und Anzeige:';
+
+  @override
+  String get appbar_table_inch => 'Tabelle der Werkstückdurchmesser in Zoll';
+
+  @override
+  String get history_cleared => 'Verlauf gelöscht';
+
+  @override
+  String get history_clear_confirm_title => 'Verlauf löschen?';
+
+  @override
+  String get history_clear_confirm_body => 'Alle Einträge werden dauerhaft gelöscht.';
+
+  @override
+  String get history_cancel => 'Abbrechen';
+
+  @override
+  String get history_clear_confirm => 'Löschen';
 }

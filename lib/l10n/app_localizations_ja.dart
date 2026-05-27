@@ -163,4 +163,34 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get term_14_body => '工具摩耗補正のための追加直径（通常0.5–2.0 mm）。';
+
+  @override
+  String get units_label => '測定単位';
+
+  @override
+  String get units_mm => 'ミリメートル (mm)';
+
+  @override
+  String get units_inch => 'インチ (inch)';
+
+  @override
+  String get units_select => '計算と表示の測定単位を選択してください：';
+
+  @override
+  String get appbar_table_inch => 'インチ表記の workpiece 直径表';
+
+  @override
+  String get history_cleared => '履歴を消去しました';
+
+  @override
+  String get history_clear_confirm_title => '履歴を消去しますか？';
+
+  @override
+  String get history_clear_confirm_body => 'すべての記録が完全に削除されます。';
+
+  @override
+  String get history_cancel => 'キャンセル';
+
+  @override
+  String get history_clear_confirm => '消去';
 }

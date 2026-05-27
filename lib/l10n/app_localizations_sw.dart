@@ -163,4 +163,34 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get term_14_body => 'Kipenyo cha ziada ili kufidia kuvaa kwa zana (0.5–2.0 mm).';
+
+  @override
+  String get units_label => 'Vipimo vya kipimo';
+
+  @override
+  String get units_mm => 'Milimita (mm)';
+
+  @override
+  String get units_inch => 'Inchi (inch)';
+
+  @override
+  String get units_select => 'Chagua kipimo cha kipimo kwa mahesabu na kuonyesha:';
+
+  @override
+  String get appbar_table_inch => 'Jedwali la kipenyo cha workpiece kwa inchi';
+
+  @override
+  String get history_cleared => 'Historia imefutwa';
+
+  @override
+  String get history_clear_confirm_title => 'Futa historia?';
+
+  @override
+  String get history_clear_confirm_body => 'Rekodi zote zitafutwa kabisa.';
+
+  @override
+  String get history_cancel => 'Ghairi';
+
+  @override
+  String get history_clear_confirm => 'Futa';
 }

@@ -1,0 +1,112 @@
+{
+  "ar": [
+    "feedback"
+  ],
+
+  "de": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "es": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "fil": [
+    "feedback"
+  ],
+
+  "fr": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "hi": [
+    "feedback"
+  ],
+
+  "id": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "it": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "ja": [
+    "feedback"
+  ],
+
+  "ko": [
+    "feedback"
+  ],
+
+  "lo": [
+    "feedback"
+  ],
+
+  "ms": [
+    "feedback"
+  ],
+
+  "nl": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "pl": [
+    "feedback"
+  ],
+
+  "pt": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "ru": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "sv": [
+    "drawer_header",
+    "drawer_title_rate",
+    "drawer_title_privacy",
+    "feedback"
+  ],
+
+  "sw": [
+    "feedback"
+  ],
+
+  "tr": [
+    "feedback"
+  ],
+
+  "vi": [
+    "feedback"
+  ],
+
+  "zh": [
+    "feedback"
+  ]
+}

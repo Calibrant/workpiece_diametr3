@@ -18,6 +18,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appbar_table => 'Tabela średnic przedmiotów obrabianych (mm)';
 
   @override
+  String get menu_cnc_calculator => 'CNC Calculator';
+
+  @override
   String get hinttext_square => 'kwadrat';
 
   @override
@@ -193,4 +196,103 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get history_clear_confirm => 'Wyczyść';
+
+  @override
+  String get cnc_calculator_material => 'Material';
+
+  @override
+  String get cnc_calculator_tool_geometry => 'Tool Geometry';
+
+  @override
+  String get cnc_calculator_diameter => 'Diameter';
+
+  @override
+  String get cnc_calculator_flutes => 'Flutes (z)';
+
+  @override
+  String get cnc_calculator_calculation_approach => 'Calculation Approach';
+
+  @override
+  String get cnc_calculator_by_speed => 'By Speed (Vc/SFM)';
+
+  @override
+  String get cnc_calculator_by_rpm => 'By RPM';
+
+  @override
+  String get cnc_calculator_manual_rpm => 'Manual RPM';
+
+  @override
+  String get cnc_calculator_target => 'Target';
+
+  @override
+  String get cnc_calculator_vc_unit => 'Vc (m/min)';
+
+  @override
+  String get cnc_calculator_sfm_unit => 'SFM (ft/min)';
+
+  @override
+  String get cnc_calculator_cut_depth_width => 'Cut Depth & Width';
+
+  @override
+  String get cnc_calculator_doc => 'DOC (ap)';
+
+  @override
+  String get cnc_calculator_woc => 'WOC (ae)';
+
+  @override
+  String get cnc_calculator_spindle_speed => 'Spindle Speed';
+
+  @override
+  String get cnc_calculator_rpm_unit => 'RPM';
+
+  @override
+  String get cnc_calculator_feed_rate => 'Feed Rate';
+
+  @override
+  String get cnc_calculator_feed_rate_metric_unit => 'mm/min';
+
+  @override
+  String get cnc_calculator_feed_rate_imperial_unit => 'IPM';
+
+  @override
+  String get cnc_calculator_mrr => 'MRR';
+
+  @override
+  String get cnc_calculator_mrr_metric_unit => 'cm³/min';
+
+  @override
+  String get cnc_calculator_mrr_imperial_unit => 'in³/min';
+
+  @override
+  String get cnc_calculator_required_power => 'Req. Power';
+
+  @override
+  String get cnc_calculator_power_metric_unit => 'kW';
+
+  @override
+  String get cnc_calculator_power_imperial_unit => 'HP';
+
+  @override
+  String get cnc_calculator_surface_speed => 'Surface Speed';
+
+  @override
+  String get cnc_calculator_surface_speed_metric_unit => 'm/min';
+
+  @override
+  String get cnc_calculator_surface_speed_imperial_unit => 'SFM';
+
+  @override
+  String get mat_aluminum => 'Aluminum';
+
+  @override
+  String get mat_steel => 'Steel';
+
+  @override
+  String get mat_brass => 'Brass';
+
+  @override
+  String get mat_hardwood => 'Hardwood';
+
+  @override
+  String get mat_acrylic => 'Acrylic';
 }

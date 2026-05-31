@@ -153,6 +153,12 @@ abstract class AppLocalizations {
   /// **'Table of workpiece diameters in mm'**
   String get appbar_table;
 
+  /// No description provided for @menu_cnc_calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'CNC Calculator'**
+  String get menu_cnc_calculator;
+
   /// No description provided for @hinttext_square.
   ///
   /// In en, this message translates to:
@@ -506,6 +512,204 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Clear'**
   String get history_clear_confirm;
+
+  /// No description provided for @cnc_calculator_material.
+  ///
+  /// In en, this message translates to:
+  /// **'Material'**
+  String get cnc_calculator_material;
+
+  /// No description provided for @cnc_calculator_tool_geometry.
+  ///
+  /// In en, this message translates to:
+  /// **'Tool Geometry'**
+  String get cnc_calculator_tool_geometry;
+
+  /// No description provided for @cnc_calculator_diameter.
+  ///
+  /// In en, this message translates to:
+  /// **'Diameter'**
+  String get cnc_calculator_diameter;
+
+  /// No description provided for @cnc_calculator_flutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Flutes (z)'**
+  String get cnc_calculator_flutes;
+
+  /// No description provided for @cnc_calculator_calculation_approach.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation Approach'**
+  String get cnc_calculator_calculation_approach;
+
+  /// No description provided for @cnc_calculator_by_speed.
+  ///
+  /// In en, this message translates to:
+  /// **'By Speed (Vc/SFM)'**
+  String get cnc_calculator_by_speed;
+
+  /// No description provided for @cnc_calculator_by_rpm.
+  ///
+  /// In en, this message translates to:
+  /// **'By RPM'**
+  String get cnc_calculator_by_rpm;
+
+  /// No description provided for @cnc_calculator_manual_rpm.
+  ///
+  /// In en, this message translates to:
+  /// **'Manual RPM'**
+  String get cnc_calculator_manual_rpm;
+
+  /// No description provided for @cnc_calculator_target.
+  ///
+  /// In en, this message translates to:
+  /// **'Target'**
+  String get cnc_calculator_target;
+
+  /// No description provided for @cnc_calculator_vc_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'Vc (m/min)'**
+  String get cnc_calculator_vc_unit;
+
+  /// No description provided for @cnc_calculator_sfm_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'SFM (ft/min)'**
+  String get cnc_calculator_sfm_unit;
+
+  /// No description provided for @cnc_calculator_cut_depth_width.
+  ///
+  /// In en, this message translates to:
+  /// **'Cut Depth & Width'**
+  String get cnc_calculator_cut_depth_width;
+
+  /// No description provided for @cnc_calculator_doc.
+  ///
+  /// In en, this message translates to:
+  /// **'DOC (ap)'**
+  String get cnc_calculator_doc;
+
+  /// No description provided for @cnc_calculator_woc.
+  ///
+  /// In en, this message translates to:
+  /// **'WOC (ae)'**
+  String get cnc_calculator_woc;
+
+  /// No description provided for @cnc_calculator_spindle_speed.
+  ///
+  /// In en, this message translates to:
+  /// **'Spindle Speed'**
+  String get cnc_calculator_spindle_speed;
+
+  /// No description provided for @cnc_calculator_rpm_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'RPM'**
+  String get cnc_calculator_rpm_unit;
+
+  /// No description provided for @cnc_calculator_feed_rate.
+  ///
+  /// In en, this message translates to:
+  /// **'Feed Rate'**
+  String get cnc_calculator_feed_rate;
+
+  /// No description provided for @cnc_calculator_feed_rate_metric_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'mm/min'**
+  String get cnc_calculator_feed_rate_metric_unit;
+
+  /// No description provided for @cnc_calculator_feed_rate_imperial_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'IPM'**
+  String get cnc_calculator_feed_rate_imperial_unit;
+
+  /// No description provided for @cnc_calculator_mrr.
+  ///
+  /// In en, this message translates to:
+  /// **'MRR'**
+  String get cnc_calculator_mrr;
+
+  /// No description provided for @cnc_calculator_mrr_metric_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'cm³/min'**
+  String get cnc_calculator_mrr_metric_unit;
+
+  /// No description provided for @cnc_calculator_mrr_imperial_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'in³/min'**
+  String get cnc_calculator_mrr_imperial_unit;
+
+  /// No description provided for @cnc_calculator_required_power.
+  ///
+  /// In en, this message translates to:
+  /// **'Req. Power'**
+  String get cnc_calculator_required_power;
+
+  /// No description provided for @cnc_calculator_power_metric_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'kW'**
+  String get cnc_calculator_power_metric_unit;
+
+  /// No description provided for @cnc_calculator_power_imperial_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'HP'**
+  String get cnc_calculator_power_imperial_unit;
+
+  /// No description provided for @cnc_calculator_surface_speed.
+  ///
+  /// In en, this message translates to:
+  /// **'Surface Speed'**
+  String get cnc_calculator_surface_speed;
+
+  /// No description provided for @cnc_calculator_surface_speed_metric_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'m/min'**
+  String get cnc_calculator_surface_speed_metric_unit;
+
+  /// No description provided for @cnc_calculator_surface_speed_imperial_unit.
+  ///
+  /// In en, this message translates to:
+  /// **'SFM'**
+  String get cnc_calculator_surface_speed_imperial_unit;
+
+  /// No description provided for @mat_aluminum.
+  ///
+  /// In en, this message translates to:
+  /// **'Aluminum'**
+  String get mat_aluminum;
+
+  /// No description provided for @mat_steel.
+  ///
+  /// In en, this message translates to:
+  /// **'Steel'**
+  String get mat_steel;
+
+  /// No description provided for @mat_brass.
+  ///
+  /// In en, this message translates to:
+  /// **'Brass'**
+  String get mat_brass;
+
+  /// No description provided for @mat_hardwood.
+  ///
+  /// In en, this message translates to:
+  /// **'Hardwood'**
+  String get mat_hardwood;
+
+  /// No description provided for @mat_acrylic.
+  ///
+  /// In en, this message translates to:
+  /// **'Acrylic'**
+  String get mat_acrylic;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

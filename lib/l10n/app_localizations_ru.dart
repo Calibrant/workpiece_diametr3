@@ -18,6 +18,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get appbar_table => 'Таблица диаметров заготовок под квадрат и шестигранник в мм';
 
   @override
+  String get menu_cnc_calculator => 'ЧПУ Калькулятор';
+
+  @override
   String get hinttext_square => 'квадрат';
 
   @override
@@ -193,4 +196,103 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get history_clear_confirm => 'Очистить';
+
+  @override
+  String get cnc_calculator_material => 'Материал';
+
+  @override
+  String get cnc_calculator_tool_geometry => 'Геометрия инструмента';
+
+  @override
+  String get cnc_calculator_diameter => 'Диаметр';
+
+  @override
+  String get cnc_calculator_flutes => 'Количество зубьев (z)';
+
+  @override
+  String get cnc_calculator_calculation_approach => 'Подход к расчету';
+
+  @override
+  String get cnc_calculator_by_speed => 'По скорости (Vc/SFM)';
+
+  @override
+  String get cnc_calculator_by_rpm => 'По оборотам (RPM)';
+
+  @override
+  String get cnc_calculator_manual_rpm => 'Ручные обороты';
+
+  @override
+  String get cnc_calculator_target => 'Целевая';
+
+  @override
+  String get cnc_calculator_vc_unit => 'Vc (м/мин)';
+
+  @override
+  String get cnc_calculator_sfm_unit => 'SFM (фут/мин)';
+
+  @override
+  String get cnc_calculator_cut_depth_width => 'Глубина и ширина резания';
+
+  @override
+  String get cnc_calculator_doc => 'Осевая глубина (ap)';
+
+  @override
+  String get cnc_calculator_woc => 'Радиальная ширина (ae)';
+
+  @override
+  String get cnc_calculator_spindle_speed => 'Обороты шпинделя';
+
+  @override
+  String get cnc_calculator_rpm_unit => 'об/мин';
+
+  @override
+  String get cnc_calculator_feed_rate => 'Минутная подача';
+
+  @override
+  String get cnc_calculator_feed_rate_metric_unit => 'мм/мин';
+
+  @override
+  String get cnc_calculator_feed_rate_imperial_unit => 'дюйм/мин';
+
+  @override
+  String get cnc_calculator_mrr => 'Объем съема материала';
+
+  @override
+  String get cnc_calculator_mrr_metric_unit => 'см³/мин';
+
+  @override
+  String get cnc_calculator_mrr_imperial_unit => 'дюйм³/мин';
+
+  @override
+  String get cnc_calculator_required_power => 'Требуемая мощность';
+
+  @override
+  String get cnc_calculator_power_metric_unit => 'кВт';
+
+  @override
+  String get cnc_calculator_power_imperial_unit => 'л.с.';
+
+  @override
+  String get cnc_calculator_surface_speed => 'Скорость резания';
+
+  @override
+  String get cnc_calculator_surface_speed_metric_unit => 'м/мин';
+
+  @override
+  String get cnc_calculator_surface_speed_imperial_unit => 'SFM';
+
+  @override
+  String get mat_aluminum => 'Алюминий';
+
+  @override
+  String get mat_steel => 'Сталь';
+
+  @override
+  String get mat_brass => 'Латунь';
+
+  @override
+  String get mat_hardwood => 'Твердое дерево';
+
+  @override
+  String get mat_acrylic => 'Акрил';
 }

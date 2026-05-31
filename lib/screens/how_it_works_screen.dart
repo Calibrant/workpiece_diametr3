@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:workpiece_diametr/ad_helper.dart';
 import 'package:workpiece_diametr/l10n/app_localizations.dart';
-import 'package:workpiece_diametr/widgets/admob_banner_secondary.dart';
 import 'package:workpiece_diametr/widgets/step_card.dart';
-import 'package:workpiece_diametr/widgets/language_switcher.dart';
 
 class HowItWorksScreen extends StatelessWidget {
   const HowItWorksScreen({super.key});

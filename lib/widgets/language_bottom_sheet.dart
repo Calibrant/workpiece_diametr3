@@ -34,11 +34,9 @@ class LanguageBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final currentLocale = context.watch<LocaleProvider>().locale;
 
-    return Container(
-      decoration: const BoxDecoration(
-        color: Color(0xFF222831),
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
-      ),
+    return Material(
+      color: const Color(0xFF222831),
+  borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
